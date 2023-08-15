@@ -10,7 +10,6 @@
     <style>
         body>div:first-child{
             position: absolute;
-            border: 1px solid;
             height: 50vh;
             width: 50vw;
             background: red;
@@ -20,7 +19,6 @@
         }
         body>div:nth-child(2){
             position: absolute;
-            border: 1px solid;
             height: 50vh;
             width: 50vw;
             background: green;
@@ -30,7 +28,6 @@
         }
         body>div:nth-child(3){
             position: absolute;
-            border: 1px solid;
             height: 50vh;
             width: 50vw;
             background: orange;
@@ -40,7 +37,6 @@
         }
         body>div:nth-child(4){
             position: absolute;
-            border: 1px solid;
             height: 50vh;
             width: 50vw;
             background: deeppink;
@@ -48,12 +44,11 @@
             bottom: 0;
             display: inline-block;
         }
-        .circle1{
+        .circle{
             position: absolute;
-            width: 30%;
+            width: 28%;
             height: 60%;
             border-radius: 100%;
-            border: 2px solid white;
             top: 0px;
             left: 0px;
             right: 0px;
@@ -65,7 +60,6 @@
         .smallBox{
             height:35%;
             width: 35%;
-            border: 1px solid white;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -77,8 +71,7 @@
 
         body>div:last-child{
             height: 35vh;
-            width: 35vh;
-            border: 1px solid;
+            width: 16vw;
             position: absolute;
             top: 0px;
             left: 0px;
@@ -91,7 +84,7 @@
         body>div:last-child>div{
             height: 60%;
             width: 60%;
-            border-radius: 100px;
+            border-radius: 100%;
             background: red;
             position: absolute;
             top: 0px;
@@ -102,9 +95,9 @@
         }
 
         #smallCurve1{
-            height: 30%;
-            width: 15%;
-            border-bottom-right-radius: 100px;
+            height: 38.5%;
+            width: 16%;
+            border-bottom-right-radius: 180%;
             background: white;
             position: absolute;
             top: 0px;
@@ -113,52 +106,109 @@
         }
 
         #smallCurve2{
-            height: 30%;
-            width: 15%;
-            border-top-right-radius: 180px;
-            background: white;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            margin: auto;
-            border: 1px solid;
-        }
-
-        #smallCurve3{
-            height: 30%;
-            width: 15%;
-            border-top-right-radius: 100px;
+            height: 38.5%;
+            width: 16%;
+            border-bottom-left-radius: 180%;
             background: white;
             position: absolute;
             top: 0px;
             right: 0px;
             margin: auto;
-            border: 1px solid;
+        }
+
+        #smallCurve3{
+            height: 38.5%;
+            width: 16%;
+            border-top-right-radius: 180%;
+            background: white;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+        }
+
+        #smallCurve4{
+            height: 38.5%;
+            width: 16%;
+            border-top-left-radius: 180%;
+            background: white;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            margin: auto;
+        }
+
+        #smallCircle1{
+            height: 19.5%;
+            width: 9%;
+            border-bottom-left-radius: 100%;
+            background: white;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: auto;
+        }
+
+        #smallCircle2{
+            height: 19.5%;
+            width: 9%;
+            border-bottom-right-radius: 100%;
+            background: white;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: auto;
+        }
+
+        #smallCircle3{
+            height: 19.5%;
+            width: 9%;
+            border-top-left-radius: 100%;
+            background: white;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            margin: auto;
+        }
+
+        #smallCircle4{
+            height: 19.5%;
+            width: 9%;
+            border-top-right-radius: 100%;
+            background: white;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
         }
     </style>
 </head>
 <body>
 <div>
     <div id="smallCurve1"></div>
-    <div class="circle1">
+    <div id="smallCircle1"></div>
+    <div class="circle">
         <div class="smallBox"></div>
     </div>
 </div>
 <div>
     <div id="smallCurve2"></div>
-    <div class="circle1">
+    <div id="smallCircle2"></div>
+    <div class="circle">
         <div class="smallBox"></div>
     </div>
 </div>
 <div>
     <div id="smallCurve3"></div>
-    <div class="circle1">
+    <div id="smallCircle3"></div>
+    <div class="circle">
         <div class="smallBox"></div>
     </div>
 </div>
 <div>
     <div id="smallCurve4"></div>
-    <div class="circle1">
+    <div id="smallCircle4"></div>
+    <div class="circle">
         <div class="smallBox"></div>
     </div>
 </div>
