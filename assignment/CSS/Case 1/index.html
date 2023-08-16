@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assignment/CSS/Case 1/8.0.1_normalize.css">
     <title>InClass Assignment</title>
     <style>
-        body>div:first-child{
+        .box1{
             position: absolute;
             height: 50vh;
             width: 50vw;
@@ -17,7 +17,7 @@
             left: 0px;
             display: inline-block;
         }
-        body>div:nth-child(2){
+        .box2{
             position: absolute;
             height: 50vh;
             width: 50vw;
@@ -26,7 +26,7 @@
             top: 0;
             display: inline-block;
         }
-        body>div:nth-child(3){
+        .box3{
             position: absolute;
             height: 50vh;
             width: 50vw;
@@ -35,7 +35,7 @@
             bottom: 0;
             display: inline-block;
         }
-        body>div:nth-child(4){
+        .box4{
             position: absolute;
             height: 50vh;
             width: 50vw;
@@ -69,7 +69,7 @@
             background: red;
         }
 
-        body>div:last-child{
+        .middleBox{
             height: 35vh;
             width: 16vw;
             position: absolute;
@@ -81,7 +81,7 @@
             background: white;
         }
 
-        body>div:last-child>div{
+        .middleCircle{
             height: 60%;
             width: 60%;
             border-radius: 100%;
@@ -94,7 +94,7 @@
             margin: auto;
         }
 
-        #smallCurve1{
+        .smallCurve1{
             height: 38.5%;
             width: 16%;
             border-bottom-right-radius: 180%;
@@ -105,7 +105,7 @@
             margin: auto;
         }
 
-        #smallCurve2{
+        .smallCurve2{
             height: 38.5%;
             width: 16%;
             border-bottom-left-radius: 180%;
@@ -116,7 +116,7 @@
             margin: auto;
         }
 
-        #smallCurve3{
+        .smallCurve3{
             height: 38.5%;
             width: 16%;
             border-top-right-radius: 180%;
@@ -127,7 +127,7 @@
             margin: auto;
         }
 
-        #smallCurve4{
+        .smallCurve4{
             height: 38.5%;
             width: 16%;
             border-top-left-radius: 180%;
@@ -138,7 +138,7 @@
             margin: auto;
         }
 
-        #smallCircle1{
+        .smallCircle1{
             height: 19.5%;
             width: 9%;
             border-bottom-left-radius: 100%;
@@ -149,7 +149,7 @@
             margin: auto;
         }
 
-        #smallCircle2{
+        .smallCircle2{
             height: 19.5%;
             width: 9%;
             border-bottom-right-radius: 100%;
@@ -160,7 +160,7 @@
             margin: auto;
         }
 
-        #smallCircle3{
+        .smallCircle3{
             height: 19.5%;
             width: 9%;
             border-top-left-radius: 100%;
@@ -171,7 +171,7 @@
             margin: auto;
         }
 
-        #smallCircle4{
+        .smallCircle4{
             height: 19.5%;
             width: 9%;
             border-top-right-radius: 100%;
@@ -181,39 +181,85 @@
             left: 0px;
             margin: auto;
         }
+
+        #secondSection{
+            position: absolute;
+            top: 1000px;
+            left: 0px;
+            right: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 </head>
 <body>
-<div>
-    <div id="smallCurve1"></div>
-    <div id="smallCircle1"></div>
-    <div class="circle">
-        <div class="smallBox"></div>
+<section>
+    <div class="box1">
+        <div class="smallCurve1"></div>
+        <div class="smallCircle1"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
     </div>
-</div>
-<div>
-    <div id="smallCurve2"></div>
-    <div id="smallCircle2"></div>
-    <div class="circle">
-        <div class="smallBox"></div>
+    <div class="box2">
+        <div class="smallCurve2"></div>
+        <div class="smallCircle2"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
     </div>
-</div>
-<div>
-    <div id="smallCurve3"></div>
-    <div id="smallCircle3"></div>
-    <div class="circle">
-        <div class="smallBox"></div>
+    <div class="box3">
+        <div class="smallCurve3"></div>
+        <div class="smallCircle3"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
     </div>
-</div>
-<div>
-    <div id="smallCurve4"></div>
-    <div id="smallCircle4"></div>
-    <div class="circle">
-        <div class="smallBox"></div>
+    <div class="box4">
+        <div class="smallCurve4"></div>
+        <div class="smallCircle4"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
     </div>
-</div>
-<div>
-    <div></div>
-</div>
+    <div class="middleBox">
+        <div class="middleCircle"></div>
+    </div>
+</section>
+<section id="secondSection">
+    <div class="box1">
+        <div class="smallCurve1"></div>
+        <div class="smallCircle1"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="smallCurve2"></div>
+        <div class="smallCircle2"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="smallCurve3"></div>
+        <div class="smallCircle3"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
+    </div>
+    <div class="box4">
+        <div class="smallCurve4"></div>
+        <div class="smallCircle4"></div>
+        <div class="circle">
+            <div class="smallBox"></div>
+        </div>
+    </div>
+    <div class="middleBox">
+        <div class="middleCircle"></div>
+    </div>
+</section>
 </body>
 </html>
