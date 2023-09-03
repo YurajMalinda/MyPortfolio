@@ -4,27 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scalable=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="8.0.1_normalize.css">
     <title>In Class Assignment 2</title>
     <style>
-        body>section>div:first-child>nav>pre>span{
-            font-size: large;
-            font-family:'Gill Sans';
+        header{
+            position: relative;
+            height: 80px;
+            background-color: white;
+            border: 1px solid;
         }
 
-        body>section>div:first-child{
-            border: 2px solid;
+        header>img{
+            width: 200px;
+            margin-left: 30px;
+            margin-top: 10px;
         }
+
+        header>nav{
+            position: absolute;
+            top: 0;
+            right: 30px;
+            bottom: 0;
+        }
+
+        header>nav>ul>li{
+            display: inline-block;
+            padding: 15px;
+            font-weight: bold;
+            padding-right: 30px;
+        }
+
+        main{
+            position: relative;
+        }
+
+        main>nav{
+            width: 300px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: mediumpurple;
+        }
+
+        main>nav>ul{
+            color: white;
+            list-style: none;
+        }
+
+        main>nav>ul>li{
+            padding-top: 40px;
+            font-size: 20px;
+        }
+
+        main>section{
+            margin-left: 300px;
+            padding: 10px;
+        }
+
+        main>section>p:nth-child(2){
+            margin-top: 0;
+        }
+
+        main>section>p:last-of-type{
+            margin-bottom: 0;
+        }
+
+        main>section>section {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+            border: 1px solid limegreen;
+        }
+
+        main>section>section>div {
+            /*width: calc(100% / 3);*/
+            width: 33.1%;
+            height: 100%;
+            display: inline-block;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        main>section>section>div:nth-child(1){
+            background: url("assests/monkey-swinging.gif");
+        }
+        main>section>section>div:nth-child(2){
+            background: url("assests/monkey-swinging.gif");
+        }
+        main>section>section>div:nth-child(3){
+            background: url("assests/monkey-swinging.gif");
+        }
+
+        footer{
+            height: 40px;
+            background-color: dimgrey;
+        }
+
+        footer>p{
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            padding-top: 10px;
+        }
+
+
     </style>
 </head>
 <body>
+<header>
+    <img src="assests/IJSE.png" alt="IJSE">
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+
     <section>
-        <div>
-            <nav>
-                <pre>
-<span>IJSE                                                                                                                                                                                                                                  Home        Services        Contacts        About Us</span>
-                </pre>
-            </nav>
-        </div>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis molestiae nulla reprehenderit voluptas. Assumenda cum, cupiditate eveniet ipsum labore natus nihil omnis provident repellat ut! Doloribus ducimus provident repellendus ut!</p>
+
     </section>
+</main>
+
+<footer>
+    <P><small>Developed by IJSE</small></P>
+</footer>
 </body>
 </html>
