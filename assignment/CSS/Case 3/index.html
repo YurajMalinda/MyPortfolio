@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="8.0.1_normalize.css">
+    <title>Assignment Case 3</title>
+    <style>
+        body>section:first-child>div{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+            z-index: 1;
+        }
+
+        body>section:first-child>div:first-child{
+            width: 300px;
+            height: 300px;
+            border: 20px solid dimgray;
+        }
+
+        body>section:first-child>div:last-child{
+            width: 260px;
+            height: 260px;
+            border: 20px solid red;
+        }
+
+        .notFixed{
+            height: 100vh;
+            position: relative;
+        }
+
+        .notFixed>div{
+            position: absolute;
+            top : 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 260px;
+            height: 260px;
+            margin: auto;
+            border-radius: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body>section:nth-child(3)>div{
+            background-color: lightblue;
+        }
+
+        body>section:nth-child(4)>div{
+            background-color: orangered;
+        }
+
+        body>section:nth-child(2)>div{
+            background-color: purple;
+        }
+
+        .notFixed>div>p{
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="fixed">
+        <div></div>
+        <div></div>
+    </section>
+    <section class="notFixed">
+        <div>
+            <p>Hello</p>
+        </div>
+    </section>
+    <section class="notFixed">
+        <div>
+            <p>Welcome To</p>
+        </div>
+    </section>
+    <section class="notFixed">
+        <div>
+            <p>Institute of Java and Software Engineering.</p>
+        </div>
+    </section>
+</body>
+</html>
