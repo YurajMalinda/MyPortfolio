@@ -10,24 +10,40 @@
     <meta name="Author" content="Yuraj Malinda">
     <meta name="theme-color" content="red">
     <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="assests/CSS/8.0.1_normalize.css">
+    <link rel="stylesheet" href="MyPortfolio.css">
+    <meta name="canonical" href="http://yurajmalinda.great-site.net/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
     <!--
          "index" (allow indexing),
          "noindex" (prevent indexing),
          "follow" (follow links on the page),
          "nofollow" (do not follow links on the page).
          -->
-    <meta name="canonical" href="http://yurajmalinda.great-site.net/">
     <!--The canonical tag helps search engines understand
         which version of a page should be considered for
         indexing and ranking when duplicate or similar
         content exists-->
 </head>
 <body>
-    <main>
+
     <header>
+        <svg width="78" height="52" viewBox="0 0 78 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="9.59473" y="-1" width="58.9792" height="52.6187" rx="15" fill="url(#paint0_linear_384_747)"/>
+            <path d="M22.0378 29.226L13.9482 14.4181L17.483 14.5169L23.7955 26.3521L30.7923 14.8887L34.2274 14.9847L25.3735 29.3192L25.1101 38.7452L21.7745 38.652L22.0378 29.226Z" fill="#415DC2"/>
+            <path d="M37.9713 39.1045L38.6417 15.108L41.7118 15.1938L49.5057 28.698L57.9584 15.6477L60.9123 15.7302L60.2419 39.7267L57.0888 39.6386L57.6086 21.0356L50.5802 31.8503L48.1075 31.7812L41.6764 20.6236L41.1575 39.1935L37.9713 39.1045Z" fill="#43CF6B"/>
+            <defs>
+                <linearGradient id="paint0_linear_384_747" x1="26.3633" y1="25.5985" x2="89.1011" y2="25.5985" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.225111" stop-color="#FFF500"/>
+                    <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <h2>Yuraj Malinda.</h2>
         <nav>
-            <li>Yuraj Malinda</li>
-            <li>Home</li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -37,110 +53,125 @@
             <li><a href="#contact">Contact me</a></li>
         </nav>
     </header>
-    <hr>
-    <section>
-        <section>
-            <dl>
-                <dt>Hello</dt>
-                <dt>I'm Yuraj Malinda</dt>
-                <pre>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-obcaecati itaque perspiciatis, corrupti ea delectus, expedita 
-quas, voluptatum inventore nihil dignissimos animi? Quibusdam
-                </pre>
-            </dl>
-        </section>
-        <aside>
-            <img src="assests/images/Main.png" width="300" alt="">
-        </aside>
-    </section>
-    <hr>
-    <section>
-        <aside>
-            <img src="assests/images/Main1.jpg" width="300" alt="This is about me picture">
-        </aside>
-        <section>
+
+
+    <main>
+
+        <section id="home" class="page">
             <section>
-                <h2><dfn id="about">About me</dfn></h2>
-                <h3>I'm Yuraj Malinda</h3>
-                <h4>A Passianate Full stack developer</h4>
-                <pre>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-Veniam nulla quasi, explicabo magnam omnis cupiditate repudiandae. 
-Velit impedit, consectetur saepe quasi quaerat ex ab fugiat! 
-Quidem id veritatis repellat vitae.
-                </pre>
+                <dl>
+                    <dt>Hello</dt>
+                    <dt>I'm Yuraj Malinda</dt>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        obcaecati itaque perspiciatis, corrupti ea delectus, expedita
+                        quas, voluptatum inventore nihil dignissimos animi? Quibusdam
+                    </p>
+                </dl>
+            </section>
+            <aside>
+                <img src="assests/images/Main.png" width="300" alt="">
+            </aside>
+        </section>
+
+
+        <section id="about" class="page">
+            <aside>
+                <img src="assests/images/Main1.jpg" width="300" alt="This is about me picture">
+            </aside>
+            <section>
+                <section>
+                    <h2>About me</h2>
+                    <h3>I'm Yuraj Malinda</h3>
+                    <h4>A Passianate Full stack developer</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Veniam nulla quasi, explicabo magnam omnis cupiditate repudiandae.
+                        Velit impedit, consectetur saepe quasi quaerat ex ab fugiat!
+                        Quidem id veritatis repellat vitae.
+                    </p>
+                </section>
             </section>
         </section>
-    </section>
-    <hr>
-    <section>
-        <h2><dfn id="education">Education</dfn></h2>
-        <div>
-            <ul>
-                <li>Mahinda college(Ordinary level(O/L))</li>
-                <li>Mahinda college(Advanced level(A/L))</li>
-                <li>Institute of Java abd Software Engineering(IJSE)(Gaduate Diploma in Software Engineering</li>
-            </ul>
-        </div>
-    </section>
-    <hr>
-    <section>
-        <h2><dfn id="skills">Skills</dfn></h2>
-        <section>
-          <img src="assests/skills/Figma-Light.svg" width="100">
-            <img src="assests/skills/Github-Light.svg" width="100">
-            <img src="assests/skills/MySQL-Light.svg" width="100">
-            <img src="assests/skills/Python-Light.svg" width="100">
-            <img src="assests/skills/Photoshop.svg" width="100">
-            <img src="assests/skills/HTML.svg" width="100">
-        </section>
-    </section><hr>
-    <section>
-        <h2><dfn id="assignments">Assignments</dfn></h2>
-        <div></div>
-    </section><hr>
-    <section>
-        <h2><dfn id="projects">Projects</dfn></h2>
-        <div></div>
-    </section><hr>
-    <section>
-        <h2><dfn id="gallery">Gallery</dfn></h2>
-        <section>
-            <img src="assests/images/1.jpg" width="300">
-            <img src="assests/images/2.jpg" width="300">
-            <img src="assests/images/3.jpg" width="300">
-        </section>
-    </section><hr>
-    <section>
-        <h2><dfn id="contact">Contact me</dfn></h2>
-        <div>
-            <p>Call me <a href="tel:+94768575463">GO</a></p>
-        </div>
-        <div>
-            <p>Mail me <a href="mailto:yurajmalinda123@gmail.com">Send</a></p>
-        </div>
-        <section>
+
+
+        <section id="education" class="page">
+            <h2>Education</h2>
             <div>
-                <aside>
-                    <img src="assests/images/Main1.jpg" width="300">
-                </aside>
-                <section>
-                    <form id="form">
-                        <fieldset>
-                            <input type="text" placeholder="Your Name" required><br><br>
-                            <input type="Email" placeholder="Your Email" required><br><br>
-                            <input type="text" placeholder="Subject" required><br><br>
-                            <textarea placeholder="Message"></textarea><br><br>
-                            <button type="submit">Send</button><br>
-                        </fieldset>
-                    </form>
-                </section>
+                <ul>
+                    <li>Mahinda college(Ordinary level(O/L))</li>
+                    <li>Mahinda college(Advanced level(A/L))</li>
+                    <li>Institute of Java abd Software Engineering(IJSE)(Gaduate Diploma in Software Engineering</li>
+                </ul>
             </div>
         </section>
-    </section>
+
+
+        <section id="skills" class="page">
+            <h2>Skills</h2>
+            <section>
+                <img src="assests/skills/Figma-Light.svg" width="100">
+                <img src="assests/skills/Github-Light.svg" width="100">
+                <img src="assests/skills/MySQL-Light.svg" width="100">
+                <img src="assests/skills/Python-Light.svg" width="100">
+                <img src="assests/skills/Photoshop.svg" width="100">
+                <img src="assests/skills/HTML.svg" width="100">
+            </section>
+        </section>
+
+
+        <section id="assignments" class="page">
+            <h2>Assignments</h2>
+            <div></div>
+        </section>
+
+
+        <section id="projects" class="page">
+            <h2>Projects</h2>
+            <div></div>
+        </section>
+
+
+        <section id="gallery" class="page">
+            <h2>Gallery</h2>
+            <section>
+                <img src="assests/images/1.jpg" width="300">
+                <img src="assests/images/2.jpg" width="300">
+                <img src="assests/images/3.jpg" width="300">
+            </section>
+        </section>
+
+
+        <section id="contact" class="page">
+            <h2>Contact me</h2>
+            <div>
+                <p>Call me <a href="tel:+94768575463">GO</a></p>
+            </div>
+            <div>
+                <p>Mail me <a href="mailto:yurajmalinda123@gmail.com">Send</a></p>
+            </div>
+            <section>
+                <div>
+                    <aside>
+                        <img src="assests/images/Main1.jpg" width="300">
+                    </aside>
+                    <section>
+                        <form id="form">
+                            <fieldset>
+                                <input type="text" placeholder="Your Name" required><br><br>
+                                <input type="Email" placeholder="Your Email" required><br><br>
+                                <input type="text" placeholder="Subject" required><br><br>
+                                <textarea placeholder="Message"></textarea><br><br>
+                                <button type="submit">Send</button><br>
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </section>
     </main>
-    <hr>
+
+
     <footer>
         <img usemap="#insta" src="assests/social/Instagram.svg" width="20">
         <map name="insta"><area shape="rect" coords="20,20,0,0" alt="" target="_blank" href="http://ijse.lk"></map>
@@ -151,5 +182,7 @@ Quidem id veritatis repellat vitae.
         <small>Copyright &copy2023 All rights reserved | This website designed & developed by
             Yuraj Malinda.</small>
     </footer>
+
+
 </body>
 </html>

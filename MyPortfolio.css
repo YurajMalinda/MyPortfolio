@@ -1,0 +1,67 @@
+
+h2{
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.page{
+    height: 100vh;
+}
+
+
+/*------header------*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: #262626;
+}
+
+header>svg{
+    width: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+}
+
+header>h2{
+    color: white;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 165px;
+    margin: auto;
+}
+
+header>nav{
+    position: absolute;
+    right: 100px;
+    top: 4px;
+    bottom: 0;
+}
+
+header>nav>li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header>nav>li>a{
+    text-decoration: none;
+    color: #D9D9D9;
+}
+
+header>nav>li>a:hover{
+    transition: all;
+    color: #FFF500;
+}
+
+
+/*------home------*/
+
