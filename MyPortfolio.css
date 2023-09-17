@@ -1,3 +1,7 @@
+body{
+
+}
+
 
 h2{
     font-family: 'Lobster', cursive;
@@ -6,6 +10,10 @@ h2{
 
 .page{
     height: 100vh;
+    padding-top: 48px;
+    padding-right: 100px;
+    padding-left: 100px;
+    position: relative;
 }
 
 
@@ -18,6 +26,8 @@ header{
     right: 0;
     height: 48px;
     background-color: #262626;
+    box-shadow: 0px 0.25px 0.5px #FFF500;
+    z-index: 1;
 }
 
 header>svg{
@@ -25,7 +35,7 @@ header>svg{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 100px;
+    left: 90px;
     margin: auto;
 }
 
@@ -34,7 +44,7 @@ header>h2{
     position: absolute;
     top: 10px;
     bottom: 0;
-    left: 165px;
+    left: 150px;
     margin: auto;
 }
 
@@ -64,4 +74,456 @@ header>nav>li>a:hover{
 
 
 /*------home------*/
+
+#home{
+    position: relative;
+    color: white;
+    background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
+}
+
+#home>section>hgroup>h1{
+    margin: 0;
+    font-size: 64px;
+}
+
+#home>section>hgroup>h1:nth-child(3){
+    bottom: 73px;
+    position: relative;
+    left: 108px;
+    font-family: 'Ribeye Marrow', cursive;
+    color: #FFF500;
+}
+
+#home>section>hgroup{
+    width: 44%;
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+}
+
+#home>section>article{
+    position: absolute;
+    top: 335px;
+    width: 44%;
+}
+
+#btnContact{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    background-color: #FFF500;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 400px;
+}
+
+#btnContact:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 0px 3px 5px #FFF500, -0px -3px 5px #FFF500;
+    transition: all;
+}
+
+#home>div {
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    height: 83%;
+    width: 40%;
+    position: absolute;
+    right: 100px;
+    /* top: 34px; */
+    background: url(assests/images/Main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*------about------*/
+
+#about{
+    background-color: #171717;
+    position: relative;
+    color: white;
+}
+
+#about>div{
+    background: url(assests/images/Main1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 60px;
+    width: 35%;
+    height: 83%;
+    background: url("assests/images/Main1.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 5px 5px 5px #FFF500, 5px 5px 5px #FFF500;
+}
+
+#about>section{
+    top: 60px;
+    position: absolute;
+    right: 100px;
+}
+
+#about>section>p{
+    width: 600px;
+}
+
+#about>section>hgroup>h1{
+    font-size: 56px;
+    text-align: center;
+    margin: 0
+}
+
+#about>section>hgroup>h1:nth-child(2){
+    top: -13px;
+    left: 150px;
+    position: absolute;
+    display: inline-block;
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.125);
+}
+
+#about>section>hgroup>h3{
+    margin-top: 65px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+#about>section>hgroup>h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about>section>table>tbody>tr>td{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 35px;
+}
+
+#about>section>table>tbody>tr>td:nth-child(1){
+    font-weight: bolder;
+    color: #d4d300;
+}
+
+#about>section>table>tbody>tr>td:nth-child(2){
+    font-weight: lighter;
+    font-size: medium;
+}
+
+#about>section>button{
+    background-color: #FFF500;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+#about>section>button:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 0px 3px 5px #FFF500, -0px -3px 5px #FFF500;
+    transition: all;
+}
+
+
+/*------education------*/
+
+#education{
+    position: relative;
+    color: white;
+    background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
+}
+
+#education>div>svg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#education>div>p>a{
+    text-decoration: none;
+    color: #FFF500;
+}
+
+#education>div>p{
+    font-family: "Times New Roman";
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #363632;
+    color: white;
+    width: 400px;
+}
+
+#education>div>p:nth-child(2){
+    position: absolute;
+    bottom: 210px;
+}
+
+#education>div>p:nth-child(3){
+    position: absolute;
+    top: 260px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#education>div>p:nth-child(4){
+    position: absolute;
+    right: 150px;
+    bottom: 210px;
+}
+
+#education>div>p:nth-child(4)>a{
+    color: #E45353;
+}
+
+#education>hgroup>h1{
+    font-size: 56px;
+    text-align: center;
+    margin: 0
+}
+
+#education>hgroup>h1:nth-child(2){
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.125);
+}
+
+
+/*------Skills------*/
+
+#skills{
+    position: relative;
+    color: white;
+    background-color: #171717;
+}
+
+#skills>hgroup>h1{
+    font-size: 56px;
+    text-align: center;
+    margin: 0
+}
+
+#skills>hgroup>h1:nth-child(2){
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.125);
+}
+
+#skills>section{
+    left: 224px;
+    grid-row-gap: 45px;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: space-evenly;
+    display: grid;
+    top: 190px;
+    position: absolute;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 200px;
+}
+
+#skills>section>div {
+    border-radius: 30%;
+    width: 115px;
+    height: 115px;
+}
+
+#skills>section>div:hover{
+    transition: all;
+    box-shadow: 5px 10px 10px #5A5A5A;
+}
+
+#skills>section>div:nth-child(1){
+    background: url("assests/skills/CSS.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(2){
+    background: url("assests/skills/Figma-Light.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(3){
+    background: url("assests/skills/Git.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(4){
+    background: url("assests/skills/Github-Light.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(5){
+    background: url("assests/skills/Hibernate-Light.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(6){
+    background: url("assests/skills/HTML.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(7){
+    background: url("assests/skills/MySQL-Light.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(8){
+    background: url("assests/skills/Photoshop.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+#skills>section>div:nth-child(9){
+    background: url("assests/skills/Python-Light.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*------Assignments------*/
+
+#assignments{
+    position: relative;
+    color: white;
+    background-color: #171414;
+    display: flex;
+    flex-direction: column;
+}
+
+#assignments>hgroup>h1{
+    font-size: 56px;
+    text-align: center;
+    margin: 0
+}
+
+#assignments>hgroup>h1:nth-child(2){
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    font-size: 110px;
+    color: rgba(255, 255, 255, 0.125);
+}
+
+#assignments>section{
+    display: flex;
+    width: 87%;
+    height: 400px;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: #2E2E2E;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#assignments>section>svg{
+    align-self: center;
+}
+
+#assignments>section>div{
+    width: 80%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#assignments>section>div>div{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 230px;
+    height: 240px;
+    color: black;
+    background-color: white;
+}
+
+#assignments>section>div>div>svg,p,a{
+    align-self: center;
+}
+
+#assignments>section>div>div>svg{
+    width: 85px;
+    height: 85px;
+}
+
+#assignments>section>div>div>p{
+    font-size: medium;
+    font-weight: bold;
+}
+
+#assignments>section>div>div>a{
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: #FFF500;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+}
+
+#assignments>a{
+    position: absolute;
+    bottom: 75px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: #FFF500;
+    color: black;
+    border-radius: 10px;
+}
+
+
+/*------Projects------*/
+
+#projects{
+    position: relative;
+    color: white;
+    background-color: #262626;
+}
+
+
+
+
+
+
+
+
+
+
+
 
