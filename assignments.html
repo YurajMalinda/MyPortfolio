@@ -28,6 +28,8 @@
             height: 240px;
             color: black;
             background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
         }
 
         section>div>svg,p,a{
@@ -51,6 +53,32 @@
             border: 1px solid black;
             color: black;
             border-radius: 20px;
+        }
+
+        section>div:hover{
+            transition: 1s all;
+            background-color: #FFF500;
+            box-shadow: 10px 10px 5px #FFF500;
+        }
+
+        section>div:hover svg{
+            transition: 1s all;
+            width: 100px;
+            height: 100px;
+        }
+
+        section>div:hover p{
+            transition: 1s all;
+            font-size: large;
+        }
+
+        section>div:hover a{
+            transition: 1s all;
+            padding: 3px 20px;
+            background-color: black;
+            border: 1px solid #FFF500;
+            color: #FFF500;
+            box-shadow: 2px 2px 5px black;
         }
     </style>
 </head>
