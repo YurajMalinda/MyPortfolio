@@ -173,9 +173,9 @@ header>nav>li>a:hover{
 }
 
 #about>section>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #about>section>hgroup>h1:nth-child(2){
@@ -286,9 +286,9 @@ header>nav>li>a:hover{
 }
 
 #education>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #education>hgroup>h1:nth-child(2){
@@ -298,7 +298,7 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
@@ -312,9 +312,9 @@ header>nav>li>a:hover{
 }
 
 #skills>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #skills>hgroup>h1:nth-child(2){
@@ -324,7 +324,7 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
@@ -418,9 +418,9 @@ header>nav>li>a:hover{
 }
 
 #assignments>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #assignments>hgroup>h1:nth-child(2){
@@ -430,7 +430,7 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
@@ -553,9 +553,9 @@ header>nav>li>a:hover{
 }
 
 #projects>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #projects>hgroup>h1:nth-child(2){
@@ -565,7 +565,7 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
@@ -599,8 +599,9 @@ header>nav>li>a:hover{
     flex-direction: row;
     display: flex;
     justify-content: center;
-    width: 240px;
-    height: 300px;
+    width: 16vw;
+    height: 46vh;
+    /* height: 90%; */
     color: black;
     border-radius: 10px;
     color: white;
@@ -658,9 +659,9 @@ header>nav>li>a:hover{
 }
 
 #gallery>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #gallery>hgroup>h1:nth-child(2){
@@ -670,7 +671,7 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
@@ -766,12 +767,13 @@ header>nav>li>a:hover{
     position: relative;
     color: white;
     background-color: #262626;
+    height: 100vh;
 }
 
 #contact>hgroup>h1{
-    font-size: 56px;
+    font-size: 4vw;
     text-align: center;
-    margin: 0
+    margin: 0;
 }
 
 #contact>hgroup>h1:nth-child(2){
@@ -781,8 +783,140 @@ header>nav>li>a:hover{
     right: 0;
     margin: auto;
     display: inline-block;
-    font-size: 110px;
+    font-size: 8vw;
     color: rgba(255, 255, 255, 0.125);
 }
 
+#contact>section{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact>section>div:nth-child(1){
+    align-self: center;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#contact>section>div:nth-child(1)>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact>section>div:nth-child(1)>div>a{
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 0.9vw;
+    align-self: center;
+    font-family: "Josefin Sans", cursive;
+}
+
+#contact>section>div:nth-child(1)>div>h4{
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 0.9vw;
+    align-self: center;
+    font-family: "Josefin Sans", cursive;
+}
+
+#contact>section>div:nth-child(1)>div>p{
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 0.9vw;
+    align-self: center;
+    font-family: "Josefin Sans", cursive;
+}
+
+#contact>section>div:nth-child(2){
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 43vw;
+    height: 63vh;
+}
+
+#contact>section>div:nth-child(2)>div{
+    background: url("assests/images/About me.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 47%;
+    height: 100%;
+}
+
+/* Apply some basic styles to the form and fieldset */
+#form {
+    background-color: white;
+    padding: 9px 9px;
+    border: 1px solid #ccc;
+}
+
+#form>fieldset {
+    border: none;
+}
+
+/* Style the input and textarea fields */
+#form>fieldset>input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#form>fieldset>textarea{
+    height: 82px;
+}
+
+/* Style the button */
+#form>fieldset>button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form>fieldset>button:hover {
+    background-color: #0056b3;
+}
+
+#contact>section>div:nth-child(3){
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+}
+
+#contact>section>div:nth-child(3)>img{
+    padding-right: 10px;
+    width: 2vw;
+    height: 2vw;
+}
+
+/*------footer------*/
+
+#footer{
+    border-top: 2px solid #FFF500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8vh;
+    text-align: center;
+    /* height: 23%; */
+    background-color: #2E2E2E;
+    color: white;
+}
+
+#footer>small{
+    font-size: 1.1vw;
+    font-family: 'Roboto Slab';
+    text-decoration: none;
+}
 
