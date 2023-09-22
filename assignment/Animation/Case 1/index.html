@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="../../../assests/CSS/8.0.1_normalize.css">
+  <title>Assignment 1</title>
+  <style>
+    div{
+      width: 200px;
+      height: 80px;
+      background: #024fc2;
+      border-radius: 15px;
+      border: 1px solid black;
+      position: relative;
+      animation-name: anime;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      left: 0;
+      top: 10px;
+    }
+
+    @keyframes anime {
+      0%{
+        background-color: #ece347;
+        top: 50px;
+        left: 0;
+        transform: rotate(-360deg);
+      }
+
+      25%{
+        top: 40px;
+        left: 1300px;
+        background-color: #ff253a;
+        transform: rotate(360deg);
+      }
+
+      50%{
+        left: 1300px;
+        top: 550px;
+        background-color: #007BFF;
+        transform: rotate(-360deg);
+      }
+
+      75%{
+        top: 550px;
+        left: 0;
+        background-color: #0ac914;
+        transform: rotate(360deg);
+      }
+
+      100%{
+        left: 0;
+        top: 40px;
+        background-color: #a607ac;
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

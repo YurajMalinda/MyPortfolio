@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="../../../assests/CSS/8.0.1_normalize.css">
+    <title>Assignment 2</title>
+    <style>
+      body>section{
+          height: 100%;
+          position: absolute;
+          border: 1px solid;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          overflow: hidden;
+      }
+
+      body>section>section{
+          height: 100%;
+          width: 500%;
+          display: flex;
+          border: 1px solid;
+          animation-name: slider;
+          animation-direction: alternate;
+          animation-iteration-count: infinite;
+          animation-duration: 20s;
+          animation-timing-function: ease-in-out;
+          /*animation-fill-mode: backwards;*/
+          /*animation-play-state: paused;*/
+          /*animation-fill-mode: both;*/
+      }
+
+      body>section>section>div{
+          height: 100%;
+          width: 100%;
+          flex-grow: 1;
+      }
+
+      body>section>section>div:nth-child(1){
+          background: url("images/bac_1.png");
+          background-position: center;
+          background-size: cover;
+      }
+
+      body>section>section>div:nth-child(2){
+          background: url("images/bac_2.png");
+          background-position: center;
+          background-size: cover;
+      }
+
+      body>section>section>div:nth-child(3){
+          background: url("images/bac_3.png");
+          background-position: center;
+          background-size: cover;
+      }
+
+      body>section>section>div:nth-child(4){
+          background: url("images/bac_4.png");
+          background-position: center;
+          background-size: cover;
+      }
+
+      body>section>section>div:nth-child(5){
+          background: url("images/bac_5.png");
+          background-position: center;
+          background-size: cover;
+      }
+
+      @keyframes slider {
+          0%{
+              transform: translateX(0);
+          }
+
+          25%{
+              transform: translateX(calc((-100%/5)*1));
+          }
+
+          50%{
+              transform: translateX(calc((-100%/5)*2));
+          }
+
+          75%{
+              transform: translateX(calc((-100%/5)*3));
+          }
+
+          100%{
+              transform: translateX(calc((-100%/5)*4));
+          }
+      }
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</section>
+</body>
+</html>
