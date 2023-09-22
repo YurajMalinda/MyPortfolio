@@ -150,12 +150,12 @@ header>nav>li>a:hover{
 }
 
 #about>div{
-    background-position: center;
-    background-size: cover;
     position: absolute;
-    top: 60px;
-    width: 35%;
-    height: 83%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 71%;
     background: url("assests/images/About me.jpg");
     background-position: center;
     background-size: cover;
@@ -180,7 +180,7 @@ header>nav>li>a:hover{
 
 #about>section>hgroup>h1:nth-child(2){
     top: -13px;
-    left: 150px;
+    left: 72px;
     position: absolute;
     display: inline-block;
     font-size: 110px;
