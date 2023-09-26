@@ -2375,10 +2375,10 @@ textarea {
         scroll-behavior: smooth;
     }
 
-    h2{
-        font-family: 'Lobster', cursive;
-        font-family: 'Roboto Slab', serif;
-    }
+    /*h2{*/
+    /*    font-family: 'Lobster', cursive;*/
+    /*    font-family: 'Roboto Slab', serif;*/
+    /*}*/
 
     .page{
         height: 100vh;
