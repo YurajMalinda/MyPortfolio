@@ -2461,11 +2461,11 @@ textarea {
 
     #home>section>article{
         text-align: center;
-        font-size: 3.9vw;
+        font-size: 3.1vw;
         left: 0;
         right: 0;
         margin: auto;
-        top: 78%;
+        top: 80%;
         width: 75%;
     }
 
@@ -2475,7 +2475,7 @@ textarea {
         font-size: 3vw;
         font-weight: bold;
         border-radius: 5px;
-        top: 94%;
+        top: 95%;
         left: 40%;
     }
 
@@ -2488,9 +2488,9 @@ textarea {
 
     #home>div {
         bottom: 126px;
-        height: 55%;
-        width: 100%;
-        right: 2px;
+        height: 60%;
+        width: 82%;
+        right: 49px;
     }
 
     /*------about------*/
@@ -2655,7 +2655,7 @@ textarea {
 
     #skills>section{
         width: 90%;
-        height: 57%;
+        height: 63%;
         left: 17px;
         grid-row-gap: 60px;
         grid-template-rows: repeat(3,1fr);
