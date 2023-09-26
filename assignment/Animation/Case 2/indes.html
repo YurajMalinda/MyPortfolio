@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="../../../assests/CSS/8.0.1_normalize.css">
+    <title>Assignment 2</title>
+    <style>
+        section{
+            background-color: #100526;
+            height: 100vh;
+            position: relative;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+        }
+
+        section > div{
+            background-color: #100526;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1px solid white;
+            z-index: 2;
+        }
+
+        section > div > div{
+            background-color: wheat;
+            z-index: 1;
+        }
+
+        @keyframes moonAnimation {
+            0%{
+
+            }
+
+            100%{
+
+            }
+        }
+
+    </style>
 </head>
 <body>
+<section>
+    <div>
+        <div></div>
+    </div>
+
+</section>
 
 </body>
 </html>

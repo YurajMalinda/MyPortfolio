@@ -10,8 +10,8 @@ h2{
 .page{
     height: 100vh;
     padding-top: 48px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 6.7%;
+    padding-left: 6.7%;
     position: relative;
 }
 
@@ -49,7 +49,7 @@ header>h2{
 
 header>nav{
     position: absolute;
-    right: 100px;
+    right: 6.8%;
     top: 4px;
     bottom: 0;
 }
@@ -62,6 +62,7 @@ header>nav>li{
 }
 
 header>nav>li>a{
+    font-size: 1.1vw;
     text-decoration: none;
     color: #D9D9D9;
 }
@@ -82,27 +83,19 @@ header>nav>li>a:hover{
 
 #home>section>hgroup>h1{
     margin: 0;
-    font-size: 64px;
-}
-
-#home>section>hgroup>h1:nth-child(3){
-    bottom: 73px;
-    position: relative;
-    left: 108px;
-    font-family: 'Ribeye Marrow', cursive;
-    color: #FFF500;
+    font-size: 4.4vw;
 }
 
 #home>section>hgroup{
     width: 44%;
     display: inline-block;
     position: absolute;
-    top: 200px;
+    top: 28%;
 }
 
 #home>section>article{
     position: absolute;
-    top: 335px;
+    top: 47%;
     width: 44%;
 }
 
@@ -112,12 +105,12 @@ header>nav>li>a:hover{
     padding: 5px 20px;
     background-color: #FFF500;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: bold;
     border: none;
     border-radius: 10px;
     position: absolute;
-    top: 400px;
+    top: 56%;
 }
 
 #btnContact:hover{
@@ -134,7 +127,7 @@ header>nav>li>a:hover{
     height: 83%;
     width: 40%;
     position: absolute;
-    right: 100px;
+    right: 7%;
     /* top: 34px; */
     background: url(assests/images/Main.png);
     background-size: cover;
@@ -240,6 +233,7 @@ header>nav>li>a:hover{
 }
 
 #education>div>svg{
+    width: 80%;
     position: absolute;
     left: 0;
     right: 0;
@@ -259,7 +253,8 @@ header>nav>li>a:hover{
     padding: 10px 20px;
     background-color: #363632;
     color: white;
-    width: 400px;
+    width: 25%;
+    font-size: 1.1vw;
 }
 
 #education>div>p:nth-child(2){
@@ -329,6 +324,8 @@ header>nav>li>a:hover{
 }
 
 #skills>section{
+    width: 74%;
+    height: 61%;
     left: 224px;
     grid-row-gap: 45px;
     grid-template-rows: repeat(3,1fr);
@@ -342,8 +339,8 @@ header>nav>li>a:hover{
 
 #skills>section>div {
     border-radius: 30%;
-    width: 115px;
-    height: 115px;
+    width: 100%;
+    height: 100%;
 }
 
 #skills>section>div:hover{
@@ -437,7 +434,7 @@ header>nav>li>a:hover{
 #assignments>section{
     display: flex;
     width: 87%;
-    height: 400px;
+    height: 54%;
     align-content: center;
     justify-content: space-evenly;
     background-color: #2E2E2E;
@@ -454,6 +451,7 @@ header>nav>li>a:hover{
 }
 
 #assignments>section>div{
+    height: 60%;
     width: 80%;
     align-self: center;
     display: flex;
@@ -464,8 +462,8 @@ header>nav>li>a:hover{
     flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 230px;
-    height: 240px;
+    width: 22%;
+    height: 100%;
     color: black;
     background-color: white;
     border: 2px solid black;
@@ -477,16 +475,17 @@ header>nav>li>a:hover{
 }
 
 #assignments>section>div>div>svg{
-    width: 85px;
-    height: 85px;
+    width: 40%;
+    height: 38%;
 }
 
 #assignments>section>div>div>p{
-    font-size: medium;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
 #assignments>section>div>div>a{
+    font-size: 1.1vw;
     padding: 2px 20px;
     text-decoration: none;
     background-color: #FFF500;
@@ -572,7 +571,7 @@ header>nav>li>a:hover{
 #projects>section{
     display: flex;
     width: 87%;
-    height: 416px;
+    height: 60%;
     align-content: center;
     justify-content: space-evenly;
     background-color: #2E2E2E;
@@ -585,13 +584,15 @@ header>nav>li>a:hover{
 }
 
 #projects>section>div{
-    width: 80%;
+    width: 83%;
     align-self: center;
     display: flex;
     justify-content: space-between;
+    height: 65%;
 }
 
 #projects>section>svg{
+    height: 20%;
     align-self: center;
 }
 
@@ -599,39 +600,37 @@ header>nav>li>a:hover{
     flex-direction: row;
     display: flex;
     justify-content: center;
-    width: 16vw;
-    height: 46vh;
-    /* height: 90%; */
-    color: black;
+    width: 23.5%;
+    height: 100%;
     border-radius: 10px;
-    color: white;
 }
 
 #projects>section>div>div:nth-child(1){
-    background: url("assests/Projects/Hotel Management System.png");
-    background-size: cover;
-    background-position: center;
+background: url("assests/Projects/Hotel Management System.png");
+background-size: cover;
+background-position: center;
 }
 
 #projects>section>div>div:nth-child(2){
-    background: url("assests/Projects/Chat Application.png");
-    background-size: cover;
-    background-position: center;
+background: url("assests/Projects/Chat Application.png");
+background-size: cover;
+background-position: center;
 }
 
 #projects>section>div>div:nth-child(3){
-    background: url("assests/Projects/Hostel Management System.png");
-    background-size: cover;
-    background-position: center;
+background: url("assests/Projects/Hostel Management System.png");
+background-size: cover;
+background-position: center;
 }
 
 #projects>section>div>div:nth-child(4){
-    background: url("assests/Projects/Basic Chat Application.jpg");
-    background-size: cover;
-    background-position: center;
+background: url("assests/Projects/Basic Chat Application.jpg");
+background-size: cover;
+background-position: center;
 }
 
 #projects>section>div>div>p{
+    font-size: 1.1vw;
     color: black;
     padding: 5px 6px;
     background-color: #FFF500;
@@ -683,39 +682,42 @@ header>nav>li>a:hover{
     right: 0;
     top: 175px;
     margin: auto;
-    display: grid;
+}
 
+#gallery>section>section{
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
-#gallery>section>div:nth-child(1){
+#gallery>section>section>div:nth-child(1){
     background: url("assests/images/Gallery(1).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(2){
+#gallery>section>section>div:nth-child(2){
     background: url("assests/images/Gallery(2).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(3){
+#gallery>section>section>div:nth-child(3){
     background: url("assests/images/Gallery(3).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(4){
+#gallery>section>section>div:nth-child(4){
     background: url("assests/images/Gallery(4).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(5){
+#gallery>section>section>div:nth-child(5){
     grid-row: 2/4;
     grid-column: 1/2;
     background: url("assests/images/Gallery(5).jpg");
@@ -723,37 +725,37 @@ header>nav>li>a:hover{
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(6){
+#gallery>section>section>div:nth-child(6){
     background: url("assests/images/Gallery(6).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(7){
+#gallery>section>section>div:nth-child(7){
     background: url("assests/images/Gallery(7).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(8){
+#gallery>section>section>div:nth-child(8){
     background: url("assests/images/Gallery(8).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(9){
+#gallery>section>section>div:nth-child(9){
     background: url("assests/images/Gallery(9).webp");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(10){
+#gallery>section>section>div:nth-child(10){
     background: url("assests/images/Gallery(10).jpg");
     background-position: center;
     background-size: cover;
 }
 
-#gallery>section>div:nth-child(11){
+#gallery>section>section>div:nth-child(11){
     background: url("assests/images/Gallery(11).jpg");
     background-position: center;
     background-size: cover;
@@ -863,6 +865,8 @@ header>nav>li>a:hover{
 #form>fieldset>input[type="text"],
 input[type="email"],
 textarea {
+    resize: none;
+    margin-bottom: 27px;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -922,7 +926,7 @@ textarea {
 
 /*------------------------------------------------------Responsive------------------------------------------------------*/
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 321px) {
     *{
         scroll-behavior: smooth;
     }
@@ -991,6 +995,7 @@ textarea {
     /*------home------*/
 
     #home{
+        padding: 0;
         position: relative;
         color: white;
         background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
@@ -998,42 +1003,36 @@ textarea {
 
     #home>section>hgroup>h1{
         margin: 0;
-        font-size: 64px;
-    }
-
-    #home>section>hgroup>h1:nth-child(3){
-        bottom: 73px;
-        position: relative;
-        left: 108px;
-        font-family: 'Ribeye Marrow', cursive;
-        color: #FFF500;
+        font-size: 8vw;
     }
 
     #home>section>hgroup{
-        width: 44%;
-        display: inline-block;
-        position: absolute;
-        top: 200px;
+        text-align: center;
+        width: 76%;
+        top: 383px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     #home>section>article{
-        position: absolute;
-        top: 335px;
-        width: 44%;
+        text-align: center;
+        font-size: 3.9vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 435px;
+        width: 75%;
     }
 
     #btnContact{
-        text-decoration: none;
-        color: black;
-        padding: 5px 20px;
-        background-color: #FFF500;
+        padding: 2px 8px;
         text-align: center;
-        font-size: 18px;
+        font-size: 3vw;
         font-weight: bold;
-        border: none;
-        border-radius: 10px;
-        position: absolute;
-        top: 400px;
+        border-radius: 5px;
+        top: 518px;
+        left: 40px;
     }
 
     #btnContact:hover{
@@ -1044,7 +1043,7 @@ textarea {
     }
 
     #home>div {
-        bottom: 208px;
+        bottom: 126px;
         height: 55%;
         width: 100%;
         right: 2px;
@@ -1053,83 +1052,75 @@ textarea {
     /*------about------*/
 
     #about{
-        background-color: #171717;
-        position: relative;
-        color: white;
+        padding: 0;
     }
 
     #about>div{
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top: 60px;
-        width: 35%;
-        height: 83%;
-        background: url("assests/images/About me.jpg");
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 5px 5px 5px #FFF500, 5px 5px 5px #FFF500;
+        display: none;
     }
 
     #about>section{
-        top: 60px;
-        position: absolute;
-        right: 100px;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        top: 40px;
+        right: 0
+    }
+
+    #about>section>hgroup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #about>section>p{
-        width: 600px;
+        margin-bottom: 0;
+        font-size: 3.9vw;
+        width: 90%;
     }
 
     #about>section>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 7vw;
     }
 
     #about>section>hgroup>h1:nth-child(2){
-        top: -13px;
-        left: 150px;
-        position: absolute;
-        display: inline-block;
-        font-size: 110px;
-        color: rgba(255, 255, 255, 0.125);
+        top: 4px;
+        font-size: 10vw;
+        left: 90px;
     }
 
     #about>section>hgroup>h3{
-        margin-top: 65px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 35px;
-        margin-bottom: 0;
+        margin-top: 50px;
+        font-size: 6vw;
     }
 
     #about>section>hgroup>h4{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 25px;
+        font-size: 4vw;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    #about>section>table{
+        margin-top: 25px;
+        width: 90%;
+        font-size: 3.6vw;
     }
 
     #about>section>table>tbody>tr>td{
-        font-family: 'Josefin Sans', sans-serif;
-        height: 35px;
+        height: 28px;
     }
 
     #about>section>table>tbody>tr>td:nth-child(1){
-        font-weight: bolder;
-        color: #d4d300;
+        padding: 0;
     }
 
     #about>section>table>tbody>tr>td:nth-child(2){
-        font-weight: lighter;
-        font-size: medium;
+        font-size: 3.6vw;
+        padding: 0;
     }
 
     #about>section>button{
-        background-color: #FFF500;
-        font-weight: bold;
-        font-size: medium;
-        border-radius: 5px;
+        font-size: 3.6vw;
     }
 
     #about>section>button:hover{
@@ -1143,18 +1134,11 @@ textarea {
     /*------education------*/
 
     #education{
-        position: relative;
-        color: white;
-        background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
+        padding: 0;
     }
 
     #education>div>svg{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        display: none;
     }
 
     #education>div>p>a{
@@ -1163,17 +1147,16 @@ textarea {
     }
 
     #education>div>p{
-        font-family: "Times New Roman";
-        text-align: center;
-        padding: 10px 20px;
-        background-color: #363632;
-        color: white;
-        width: 400px;
+        width: 55%;
+        font-size: 3.9vw;
     }
 
     #education>div>p:nth-child(2){
-        position: absolute;
-        bottom: 210px;
+        top: 110px;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
     }
 
     #education>div>p:nth-child(3){
@@ -1185,9 +1168,11 @@ textarea {
     }
 
     #education>div>p:nth-child(4){
-        position: absolute;
-        right: 150px;
-        bottom: 210px;
+        top: 302px;
+        right: 0;
+        left: 0;
+        position: relative;
+        margin: auto;
     }
 
     #education>div>p:nth-child(4)>a{
@@ -1195,68 +1180,52 @@ textarea {
     }
 
     #education>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #education>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
 
     /*------Skills------*/
 
     #skills{
-        position: relative;
-        color: white;
-        background-color: #171717;
+        padding: 0;
     }
 
     #skills>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #skills>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
     #skills>section{
-        left: 224px;
-        grid-row-gap: 45px;
+        width: 90%;
+        height: 52%;
+        left: 17px;
+        grid-row-gap: 60px;
         grid-template-rows: repeat(3,1fr);
         justify-content: space-evenly;
         display: grid;
-        top: 190px;
+        top: 146px;
         position: absolute;
-        grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 200px;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 63px;
     }
 
     #skills>section>div {
         border-radius: 30%;
-        width: 115px;
-        height: 115px;
-    }
-
-    #skills>section>div:hover{
-        transition: all;
+        width: 100%;
+        height: 100%;
         box-shadow: 5px 10px 10px #5A5A5A;
     }
 
@@ -1319,62 +1288,50 @@ textarea {
     /*------Assignments------*/
 
     #assignments{
-        position: relative;
-        color: white;
-        background-color: #171414;
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
 
     #assignments>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #assignments>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
     #assignments>section{
-        display: flex;
-        width: 87%;
-        height: 400px;
-        align-content: center;
-        justify-content: space-evenly;
-        background-color: #2E2E2E;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        display: inline-block;
+        width: 100%;
+        height: 46%;
+        top: 26px;
     }
 
     #assignments>section>svg{
-        align-self: center;
+        display: none
     }
 
     #assignments>section>div{
-        width: 80%;
-        align-self: center;
-        display: flex;
-        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 200%;
     }
 
     #assignments>section>div>div{
         flex-direction: column;
         display: flex;
         justify-content: center;
-        width: 230px;
-        height: 240px;
+        width: 22%;
+        height: 100%;
         color: black;
         background-color: white;
         border: 2px solid black;
@@ -1386,22 +1343,17 @@ textarea {
     }
 
     #assignments>section>div>div>svg{
-        width: 85px;
-        height: 85px;
+        width: 50%;
+        height: 48%;
     }
 
     #assignments>section>div>div>p{
-        font-size: medium;
+        font-size: 4.5vw;
         font-weight: bold;
     }
 
     #assignments>section>div>div>a{
-        padding: 2px 20px;
-        text-decoration: none;
-        background-color: #FFF500;
-        border: 1px solid black;
-        color: black;
-        border-radius: 20px;
+        font-size: 4vw;
     }
 
     #assignments>section>div>div:hover{
@@ -1456,64 +1408,51 @@ textarea {
     /*------Projects------*/
 
     #projects{
-        position: relative;
-        color: white;
-        background-color: #262626;
+        padding: 0;
     }
 
     #projects>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #projects>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
     #projects>section{
-        display: flex;
-        width: 87%;
-        height: 416px;
-        align-content: center;
-        justify-content: space-evenly;
-        background-color: #2E2E2E;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
+        white-space: nowrap;
+        overflow-x: auto;
+        display: inline-block;
+        width: 100%;
+        height: 46%;
+        top: 26px;
     }
 
     #projects>section>div{
-        width: 80%;
-        align-self: center;
-        display: flex;
-        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        margin: auto;
+        height: 64%;
+        width: 200%;
     }
 
     #projects>section>svg{
-        align-self: center;
+        display: none;
     }
 
     #projects>section>div>div{
         flex-direction: row;
         display: flex;
         justify-content: center;
-        width: 16vw;
-        height: 46vh;
-        /* height: 90%; */
-        color: black;
+        width: 23.5%;
+        height: 100%;
         border-radius: 10px;
-        color: white;
     }
 
     #projects>section>div>div:nth-child(1){
@@ -1541,14 +1480,8 @@ textarea {
     }
 
     #projects>section>div>div>p{
-        color: black;
-        padding: 5px 6px;
-        background-color: #FFF500;
-        align-self: end;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: bold;
-        border-radius: 5px;
-        border: 1px solid black;
+        font-size: 3.4vw;
+        padding: 4px 2px;
     }
 
     #projects>section>div>div>p:hover{
@@ -1558,207 +1491,96 @@ textarea {
     }
 
 
+
     /*------Gallery------*/
 
     #gallery{
-        position: relative;
-        color: white;
-        background-color: #171717;
-        height: 150vh;
+        padding: 0;
+        height: 100vh;
     }
 
     #gallery>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #gallery>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
     #gallery>section{
-        width: 87%;
-        height: 80%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 175px;
-        margin: auto;
-        display: grid;
-
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        overflow-y: auto;
+        width: 90%;
+        top: 96px;
     }
 
-    #gallery>section>div:nth-child(1){
-        background: url("assests/images/Gallery(1).jpg");
-        background-position: center;
-        background-size: cover;
+    #gallery>section>section{
+        height: 137%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
-    #gallery>section>div:nth-child(2){
-        background: url("assests/images/Gallery(2).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(3){
-        background: url("assests/images/Gallery(3).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(4){
-        background: url("assests/images/Gallery(4).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(5){
-        grid-row: 2/4;
-        grid-column: 1/2;
-        background: url("assests/images/Gallery(5).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(6){
-        background: url("assests/images/Gallery(6).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(7){
-        background: url("assests/images/Gallery(7).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(8){
-        background: url("assests/images/Gallery(8).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(9){
-        background: url("assests/images/Gallery(9).webp");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(10){
-        background: url("assests/images/Gallery(10).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>div:nth-child(11){
-        background: url("assests/images/Gallery(11).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-
 
     /*------Contact us------*/
 
     #contact{
-        position: relative;
-        color: white;
-        background-color: #262626;
-        height: 100vh;
+        padding: 0;
     }
 
     #contact>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
     }
 
     #contact>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 10vw;
+        top: 39px;
     }
 
     #contact>section{
-        margin-top: 1%;
-        display: flex;
-        justify-content: center;
+        justify-content: start;
         flex-direction: column;
+        position: absolute;
+        top: 17%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
     }
 
     #contact>section>div:nth-child(1){
-        align-self: center;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    #contact>section>div:nth-child(1)>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #contact>section>div:nth-child(1)>div>a{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
+        margin-bottom: 12px;
+        width: 100%;
     }
 
     #contact>section>div:nth-child(1)>div>h4{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
+        font-size: 2.5vw;
     }
 
     #contact>section>div:nth-child(1)>div>p{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
+        font-size: 3vw;
     }
 
     #contact>section>div:nth-child(2){
         align-self: center;
         display: flex;
-        justify-content: center;
-        width: 43vw;
-        height: 63vh;
+        /* justify-content: center; */
+        width: 83%;
+        height: 57%;
     }
 
     #contact>section>div:nth-child(2)>div{
-        background: url("assests/images/About me.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 47%;
-        height: 100%;
+        display: none;
     }
 
     /* Apply some basic styles to the form and fieldset */
     #form {
+        border-radius: 5%;
+        height: 93%;
+        width: max-content;
         background-color: white;
         padding: 9px 9px;
         border: 1px solid #ccc;
@@ -1766,17 +1588,15 @@ textarea {
 
     #form>fieldset {
         border: none;
+        padding: 0;
     }
 
-    /* Style the input and textarea fields */
     #form>fieldset>input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
+        font-size: 57%;
+        resize: none;
+        margin-bottom: 5%;
     }
 
     #form>fieldset>textarea{
@@ -1785,10 +1605,11 @@ textarea {
 
     /* Style the button */
     #form>fieldset>button {
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: #fff;
-        border: none;
+        border: 1px solid black;
+        font-size: 69%;
+        padding: 3px 17px;
+        background-color: #FFF500;
+        color: black;
         border-radius: 5px;
         cursor: pointer;
     }
@@ -1800,33 +1621,745 @@ textarea {
     #contact>section>div:nth-child(3){
         display: flex;
         align-self: center;
-        margin-top: 10px;
+        margin-top: 4%;
     }
 
     #contact>section>div:nth-child(3)>img{
         padding-right: 10px;
-        width: 2vw;
-        height: 2vw;
+        width: 6vw;
+        height: 6vw;
     }
 
     /*------footer------*/
 
     #footer{
-        border-top: 2px solid #FFF500;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 8vh;
-        text-align: center;
-        /* height: 23%; */
-        background-color: #2E2E2E;
-        color: white;
+        height: 6vh;
     }
 
     #footer>small{
-        font-size: 1.1vw;
-        font-family: 'Roboto Slab';
-        text-decoration: none;
+        align-self: center;
+        width: 72%;
+        font-size: 2.5vw;
     }
 }
+
+
+
+@media all and (min-width: 321px) and (max-width: 376px) {
+    *{
+        scroll-behavior: smooth;
+    }
+
+    h2{
+        font-family: 'Lobster', cursive;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .page{
+        height: 100vh;
+        padding-top: 48px;
+        padding-right: 100px;
+        padding-left: 100px;
+        position: relative;
+    }
+
+
+    /*------header------*/
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background-color: #262626;
+        box-shadow: 0px 0.25px 0.5px #FFF500;
+        z-index: 1;
+    }
+
+    header>svg{
+        width: 10%;
+        left: 0;
+    }
+
+    header>h2{
+        font-size: 4vw;
+        top: 30%;
+        bottom: 0;
+        left: 11%;
+    }
+
+    header>nav{
+        display: none;
+    }
+
+    header>nav>li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    header>nav>li>a{
+        text-decoration: none;
+        color: #D9D9D9;
+    }
+
+    header>nav>li>a:hover{
+        transition: all;
+        color: #FFF500;
+    }
+
+
+    /*------home------*/
+
+    #home{
+        padding: 0;
+        position: relative;
+        color: white;
+        background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
+    }
+
+    #home>section>hgroup>h1{
+        margin: 0;
+        font-size: 8vw;
+    }
+
+    #home>section>hgroup{
+        text-align: center;
+        width: 76%;
+        top: 383px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #home>section>article{
+        text-align: center;
+        font-size: 3.9vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 435px;
+        width: 75%;
+    }
+
+    #btnContact{
+        padding: 2px 8px;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+        border-radius: 5px;
+        top: 518px;
+        left: 40px;
+    }
+
+    #btnContact:hover{
+        color: white;
+        background-color: black;
+        box-shadow: 0px 3px 5px #FFF500, -0px -3px 5px #FFF500;
+        transition: all;
+    }
+
+    #home>div {
+        bottom: 126px;
+        height: 55%;
+        width: 100%;
+        right: 2px;
+    }
+
+    /*------about------*/
+
+    #about{
+        padding: 0;
+    }
+
+    #about>div{
+        display: none;
+    }
+
+    #about>section{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        top: 40px;
+        right: 0
+    }
+
+    #about>section>hgroup{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about>section>p{
+        margin-bottom: 0;
+        font-size: 3.9vw;
+        width: 90%;
+    }
+
+    #about>section>hgroup>h1{
+        font-size: 7vw;
+    }
+
+    #about>section>hgroup>h1:nth-child(2){
+        top: 4px;
+        font-size: 10vw;
+        left: 90px;
+    }
+
+    #about>section>hgroup>h3{
+        margin-top: 50px;
+        font-size: 6vw;
+    }
+
+    #about>section>hgroup>h4{
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #about>section>table{
+        margin-top: 25px;
+        width: 90%;
+        font-size: 3.6vw;
+    }
+
+    #about>section>table>tbody>tr>td{
+        height: 28px;
+    }
+
+    #about>section>table>tbody>tr>td:nth-child(1){
+        padding: 0;
+    }
+
+    #about>section>table>tbody>tr>td:nth-child(2){
+        font-size: 3.6vw;
+        padding: 0;
+    }
+
+    #about>section>button{
+        font-size: 3.6vw;
+    }
+
+    #about>section>button:hover{
+        color: white;
+        background-color: black;
+        box-shadow: 0px 3px 5px #FFF500, -0px -3px 5px #FFF500;
+        transition: all;
+    }
+
+
+    /*------education------*/
+
+    #education{
+        padding: 0;
+    }
+
+    #education>div>svg{
+        display: none;
+    }
+
+    #education>div>p>a{
+        text-decoration: none;
+        color: #FFF500;
+    }
+
+    #education>div>p{
+        width: 55%;
+        font-size: 3.9vw;
+    }
+
+    #education>div>p:nth-child(2){
+        top: 110px;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #education>div>p:nth-child(3){
+        position: absolute;
+        top: 260px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #education>div>p:nth-child(4){
+        top: 302px;
+        right: 0;
+        left: 0;
+        position: relative;
+        margin: auto;
+    }
+
+    #education>div>p:nth-child(4)>a{
+        color: #E45353;
+    }
+
+    #education>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #education>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+
+    /*------Skills------*/
+
+    #skills{
+        padding: 0;
+    }
+
+    #skills>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #skills>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+    #skills>section{
+        width: 90%;
+        height: 52%;
+        left: 17px;
+        grid-row-gap: 60px;
+        grid-template-rows: repeat(3,1fr);
+        justify-content: space-evenly;
+        display: grid;
+        top: 146px;
+        position: absolute;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 63px;
+    }
+
+    #skills>section>div {
+        border-radius: 30%;
+        width: 100%;
+        height: 100%;
+        box-shadow: 5px 10px 10px #5A5A5A;
+    }
+
+    #skills>section>div:nth-child(1){
+        background: url("assests/skills/CSS.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(2){
+        background: url("assests/skills/Figma-Light.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(3){
+        background: url("assests/skills/Git.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(4){
+        background: url("assests/skills/Github-Light.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(5){
+        background: url("assests/skills/Hibernate-Light.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(6){
+        background: url("assests/skills/HTML.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(7){
+        background: url("assests/skills/MySQL-Light.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(8){
+        background: url("assests/skills/Photoshop.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #skills>section>div:nth-child(9){
+        background: url("assests/skills/Python-Light.svg");
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+    /*------Assignments------*/
+
+    #assignments{
+        padding: 0;
+    }
+
+    #assignments>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #assignments>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+    #assignments>section{
+        white-space: nowrap;
+        overflow-x: auto;
+        display: inline-block;
+        width: 100%;
+        height: 46%;
+        top: 26px;
+    }
+
+    #assignments>section>svg{
+        display: none
+    }
+
+    #assignments>section>div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        margin: auto;
+        height: 60%;
+        width: 200%;
+    }
+
+    #assignments>section>div>div{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        width: 22%;
+        height: 100%;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+
+    #assignments>section>div>div>svg,p,a{
+        align-self: center;
+    }
+
+    #assignments>section>div>div>svg{
+        width: 50%;
+        height: 48%;
+    }
+
+    #assignments>section>div>div>p{
+        font-size: 4.5vw;
+        font-weight: bold;
+    }
+
+    #assignments>section>div>div>a{
+        font-size: 4vw;
+    }
+
+    #assignments>section>div>div:hover{
+        transition: 1s all;
+        background-color: #FFF500;
+        box-shadow: 5px 5px 5px #FFF500;
+    }
+
+    #assignments>section>div>div:hover svg{
+        transition: 1s all;
+        width: 100px;
+        height: 100px;
+    }
+
+    #assignments>section>div>div:hover p{
+        transition: 1s all;
+        font-size: large;
+    }
+
+    #assignments>section>div>div:hover a{
+        transition: 1s all;
+        padding: 3px 20px;
+        background-color: black;
+        border: 1px solid #FFF500;
+        color: #FFF500;
+        box-shadow: 2px 2px 5px black;
+    }
+
+    #assignments>a{
+        position: absolute;
+        bottom: 75px;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+        text-decoration: none;
+        padding: 5px 20px;
+        background-color: #FFF500;
+        color: black;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    #assignments>a:hover{
+        transition: all;
+        background-color: black;
+        color: #FFF500;
+        box-shadow: 2px 2px 5px #FFF500;
+    }
+
+
+
+
+    /*------Projects------*/
+
+    #projects{
+        padding: 0;
+    }
+
+    #projects>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #projects>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+    #projects>section{
+        white-space: nowrap;
+        overflow-x: auto;
+        display: inline-block;
+        width: 100%;
+        height: 46%;
+        top: 26px;
+    }
+
+    #projects>section>div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 80px;
+        right: 0;
+        margin: auto;
+        height: 64%;
+        width: 200%;
+    }
+
+    #projects>section>svg{
+        display: none;
+    }
+
+    #projects>section>div>div{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        width: 23.5%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    #projects>section>div>div:nth-child(1){
+        background: url("assests/Projects/Hotel Management System.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #projects>section>div>div:nth-child(2){
+        background: url("assests/Projects/Chat Application.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #projects>section>div>div:nth-child(3){
+        background: url("assests/Projects/Hostel Management System.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #projects>section>div>div:nth-child(4){
+        background: url("assests/Projects/Basic Chat Application.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    #projects>section>div>div>p{
+        font-size: 3.4vw;
+        padding: 4px 2px;
+    }
+
+    #projects>section>div>div>p:hover{
+        color: #FFF500;
+        background-color: black;
+        box-shadow: 2px 2px 5px #FFF500;
+    }
+
+
+
+    /*------Gallery------*/
+
+    #gallery{
+        padding: 0;
+        height: 100vh;
+    }
+
+    #gallery>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #gallery>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+    #gallery>section{
+        overflow-y: auto;
+        width: 90%;
+        top: 96px;
+    }
+
+    #gallery>section>section{
+        height: 137%;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*------Contact us------*/
+
+    #contact{
+        padding: 0;
+    }
+
+    #contact>hgroup>h1{
+        top: 36px;
+        position: relative;
+        font-size: 7vw;
+    }
+
+    #contact>hgroup>h1:nth-child(2){
+        font-size: 10vw;
+        top: 39px;
+    }
+
+    #contact>section{
+        justify-content: start;
+        flex-direction: column;
+        position: absolute;
+        top: 17%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+    }
+
+    #contact>section>div:nth-child(1){
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    #contact>section>div:nth-child(1)>div>h4{
+        font-size: 2.5vw;
+    }
+
+    #contact>section>div:nth-child(1)>div>p{
+        font-size: 3vw;
+    }
+
+    #contact>section>div:nth-child(2){
+        align-self: center;
+        display: flex;
+        /* justify-content: center; */
+        width: 83%;
+        height: 57%;
+    }
+
+    #contact>section>div:nth-child(2)>div{
+        display: none;
+    }
+
+    /* Apply some basic styles to the form and fieldset */
+    #form {
+        border-radius: 5%;
+        height: 93%;
+        width: max-content;
+        background-color: white;
+        padding: 9px 9px;
+        border: 1px solid #ccc;
+    }
+
+    #form>fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    #form>fieldset>input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 57%;
+        resize: none;
+        margin-bottom: 5%;
+    }
+
+    #form>fieldset>textarea{
+        height: 82px;
+    }
+
+    /* Style the button */
+    #form>fieldset>button {
+        border: 1px solid black;
+        font-size: 69%;
+        padding: 3px 17px;
+        background-color: #FFF500;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #form>fieldset>button:hover {
+        background-color: #0056b3;
+    }
+
+    #contact>section>div:nth-child(3){
+        display: flex;
+        align-self: center;
+        margin-top: 4%;
+    }
+
+    #contact>section>div:nth-child(3)>img{
+        padding-right: 10px;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    /*------footer------*/
+
+    #footer{
+        height: 6vh;
+    }
+
+    #footer>small{
+        align-self: center;
+        width: 72%;
+        font-size: 2.5vw;
+    }
+}
+
 

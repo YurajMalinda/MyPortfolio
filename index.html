@@ -64,8 +64,7 @@
             <section>
                 <hgroup>
                     <h1>Hello</h1>
-                    <h1>I'm</h1>
-                    <h1> Yuraj Malinda</h1>
+                    <h1>I'm <span style="font-family: 'Ribeye Marrow', cursive; color: #FFF500">Yuraj Malinda</span></h1>
                 </hgroup>
                 <article>
                     <p>
@@ -74,7 +73,9 @@
                         quas, voluptatum inventore nihil dignissimos animi? Quibusdam
                     </p>
                 </article>
-                <a href="#contact" id="btnContact">Contact me</a>
+                <div>
+                    <a href="#contact" id="btnContact">Contact me</a>
+                </div>
             </section>
             <div></div>
 
@@ -273,17 +274,19 @@
                 <h1>Gallery</h1>
             </hgroup>
             <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
             </section>
         </section>
 
@@ -311,14 +314,10 @@
                     <div></div>
                     <form id="form">
                         <fieldset>
-                            <input type="text" placeholder="Your Name" required>
-                            <br><br>
-                            <input type="Email" placeholder="Your Email" required>
-                            <br><br>
-                            <input type="text" placeholder="Subject" required>
-                            <br><br>
-                            <textarea placeholder="Message"></textarea>
-                            <br><br>
+                            <input type="text" placeholder="Your Name" required class="contactFields">
+                            <input type="Email" placeholder="Your Email" required class="contactFields">
+                            <input type="text" placeholder="Subject" required class="contactFields">
+                            <textarea placeholder="Message" class="contactFields"></textarea>
                             <button type="submit">Send</button>
                         </fieldset>
                     </form>
