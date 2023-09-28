@@ -797,6 +797,7 @@ background-position: center;
 }
 
 #contact>section>div:nth-child(1){
+    margin-bottom: 20px;
     align-self: center;
     width: 80%;
     display: flex;
@@ -838,7 +839,7 @@ background-position: center;
     align-self: center;
     display: flex;
     justify-content: center;
-    width: 43vw;
+    width: 50vw;
     height: 63vh;
 }
 

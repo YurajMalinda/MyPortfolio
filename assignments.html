@@ -7,20 +7,50 @@
     <title>Assignments</title>
     <style>
         section{
-            height: 100%;
+            height: 220vh;
             padding-left: 100px;
             padding-right: 100px;
             padding-top: 30px;
             padding-bottom: 30px;
             background-color: #171717;
-            display: grid;
-            grid-template-rows: repeat(6,1fr);
-            grid-template-columns: repeat(4,1fr);
-            grid-row-gap: 50px;
-            grid-column-gap: 50px;
         }
 
-        section>div{
+        .topic{
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .topic>h1{
+            margin-bottom: 45px;
+            text-align: center;
+            color: #FFF500;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        #cssAssignments{
+            margin-left: 66px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            display: grid;
+            row-gap: 25px;
+        }
+
+        #transitionAssignments{
+            margin-left: 66px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,1fr);
+            display: grid;
+        }
+
+        #animationAssignments{
+            margin-left: 66px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,1fr);
+            display: grid;
+        }
+
+        .assignments{
             flex-direction: column;
             display: flex;
             justify-content: center;
@@ -32,21 +62,21 @@
             border-radius: 20px;
         }
 
-        section>div>svg,p,a{
+        .assignments>svg,p,a{
             align-self: center;
         }
 
-        section>div>svg{
+        .assignments>svg{
             width: 85px;
             height: 85px;
         }
 
-        section>div>p{
+        .assignments>p{
             font-size: medium;
             font-weight: bold;
         }
 
-        section>div>a{
+        .assignments>a{
             padding: 5px 20px;
             text-decoration: none;
             background-color: #FFF500;
@@ -55,24 +85,24 @@
             border-radius: 20px;
         }
 
-        section>div:hover{
+        .assignments:hover{
             transition: 1s all;
             background-color: #FFF500;
             box-shadow: 10px 10px 5px #FFF500;
         }
 
-        section>div:hover svg{
+        .assignments:hover svg{
             transition: 1s all;
             width: 100px;
             height: 100px;
         }
 
-        section>div:hover p{
+        .assignments:hover p{
             transition: 1s all;
             font-size: large;
         }
 
-        section>div:hover a{
+        .assignments:hover a{
             transition: 1s all;
             padding: 3px 20px;
             background-color: black;
@@ -84,215 +114,122 @@
 </head>
 <body>
 <section>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 1</p>
-        <a href="assignment/CSS/Case%201/index.html" target="_blank">View</a>
+    <div class="topic">
+        <h1>--------- CSS ---------</h1>
+        <div id="cssAssignments">
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 1</p>
+                <a href="assignment/CSS/Case%201/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 2</p>
+                <a href="assignment/CSS/Case%202/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 3</p>
+                <a href="assignment/CSS/Case%203/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 4</p>
+                <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
+            </div>
+            <div></div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 5</p>
+                <a href="assignment/CSS/Case%205/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 6</p>
+                <a href="assignment/CSS/Case%206/index.html" target="_blank">View</a>
+            </div>
+            <div></div>
+        </div>
     </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 2</p>
-        <a href="assignment/CSS/Case%202/index.html" target="_blank">View</a>
+
+    <div class="topic">
+        <h1>--------- Transition ---------</h1>
+        <div id="transitionAssignments">
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 1</p>
+                <a href="assignment/Transition/Case%201/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 2</p>
+                <a href="assignment/Transition/Case%202/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 3</p>
+                <a href="assignment/Transition/Case%203/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 4</p>
+                <a href="assignment/Transition/Case%204/index.html" target="_blank">View</a>
+            </div>
+        </div>
     </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 3</p>
-        <a href="assignment/CSS/Case%203/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%205/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%206/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/Transition/Case%201/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/Transition/Case%202/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/Transition/Case%203/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/Transition/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
-    </div>
-    <div>
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
-            <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
-        </svg>
-        <p>Assignment 4</p>
-        <a href="assignment/CSS/Case%204/index.html" target="_blank">View</a>
+
+    <div class="topic">
+        <h1>--------- Animation ---------</h1>
+        <div id="animationAssignments">
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 1</p>
+                <a href="assignment/Animation/Case%201/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 2</p>
+                <a href="assignment/Animation/Case%202/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 3</p>
+                <a href="assignment/Animation/Case%203/index.html" target="_blank">View</a>
+            </div>
+            <div class="assignments">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+                    <path fill="orange" d="M30,24H8v-9c0-2.209,1.791-4,4-4h11.046c1.756,0,3.307,1.145,3.823,2.824L30,24z"></path><ellipse cx="32" cy="60.993" opacity=".3" rx="22.562" ry="3"></ellipse><path fill="#ffce29" d="M50,17H14c-3.314,0-6,2.686-6,6v23c0,3.314,2.686,6,6,6h36c3.314,0,6-2.686,6-6V23	C56,19.686,53.314,17,50,17z"></path><path fill="#fff" d="M29,22c2.761,0,5-2.238,5-5H14c-3.314,0-6,2.686-6,6v11c2.761,0,5-2.238,5-5v-6 c0-0.552,0.449-1,1-1H29z" opacity=".3"></path><path d="M56,46V29c-2.761,0-5,2.238-5,5v12c0,0.552-0.449,1-1,1H31c-2.761,0-5,2.238-5,5h24 C53.314,52,56,49.314,56,46z" opacity=".15"></path><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M12,26.5V23c0-1.103,0.897-2,2-2h6.809"></path>
+                </svg>
+                <p>Assignment 4</p>
+                <a href="assignment/Animation/Case%204/index.html" target="_blank">View</a>
+            </div>
+        </div>
     </div>
 </section>
 </body>
