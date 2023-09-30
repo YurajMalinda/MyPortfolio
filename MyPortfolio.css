@@ -3441,11 +3441,8 @@ textarea {
     }
 
     .page{
-        height: 100vh;
-        padding-top: 48px;
-        padding-right: 6.7%;
-        padding-left: 6.7%;
-        position: relative;
+        padding-right: 4%;
+        padding-left: 4%;
     }
 
 
@@ -3463,41 +3460,27 @@ textarea {
     }
 
     header>svg{
-        width: 4%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 90px;
-        margin: auto;
+        width: 5.5%;
+        left: 3%;
     }
 
     header>h2{
-        color: white;
-        position: absolute;
-        top: 10px;
-        bottom: 0;
-        left: 150px;
-        margin: auto;
+        font-size: 2vw;
+        top: 13px;
+        left: 86px;
     }
 
     header>nav{
-        position: absolute;
-        right: 6.8%;
-        top: 4px;
-        bottom: 0;
+        right: 4%;
+        top: 5.5px;
     }
 
     header>nav>li{
-        list-style: none;
-        display: inline-block;
-        padding: 10px;
-        font-weight: bold;
+        padding: 8px;
     }
 
     header>nav>li>a{
-        font-size: 1.1vw;
-        text-decoration: none;
-        color: #D9D9D9;
+        font-size: 1.2vw;
     }
 
     header>nav>li>a:hover{
@@ -3515,35 +3498,24 @@ textarea {
     }
 
     #home>section>hgroup>h1{
-        margin: 0;
-        font-size: 4.4vw;
+        font-size: 4.7vw;
     }
 
     #home>section>hgroup{
-        width: 44%;
-        display: inline-block;
-        position: absolute;
-        top: 28%;
+        width: 45%;
+        top: 32%;
     }
 
     #home>section>article{
-        position: absolute;
-        top: 47%;
-        width: 44%;
+        font-size: 1.5vw;
+        top: 48%;
+        width: 45%;
     }
 
     #btnContact{
-        text-decoration: none;
-        color: black;
-        padding: 5px 20px;
-        background-color: #FFF500;
-        text-align: center;
-        font-size: 1.2vw;
-        font-weight: bold;
-        border: none;
-        border-radius: 10px;
-        position: absolute;
-        top: 56%;
+        padding: 5px 15px;
+        font-size: 1.5vw;
+        top: 61%;
     }
 
     #btnContact:hover{
@@ -3554,130 +3526,85 @@ textarea {
     }
 
     #home>div {
-        margin: auto;
-        bottom: 0;
-        top: 0;
         height: 83%;
-        width: 40%;
-        position: absolute;
-        right: 7%;
-        /* top: 34px; */
-        background: url(assests/images/Main.png);
-        background-size: cover;
-        background-position: center;
+        width: 43%;
+        right: 4%;
     }
 
     /*------about------*/
 
-    #about{
-        background-color: #171717;
-        position: relative;
-        color: white;
-    }
 
     #about>div{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 30%;
+        width: 35%;
         height: 71%;
-        background: url("assests/images/About me.jpg");
-        background-position: center;
-        background-size: cover;
-        box-shadow: inset 5px 5px 5px #FFF500, 5px 5px 5px #FFF500;
     }
 
     #about>section{
-        top: 60px;
-        position: absolute;
-        right: 100px;
+        width: 55%;
+        top: 50px;
+        right: 3%;
     }
 
     #about>section>p{
-        width: 600px;
+        margin-top: 5px;
+        font-size: 1.5vw;
+        width: 100%;
     }
 
     #about>section>hgroup>h1{
-        font-size: 4vw;
+        font-size: 3.5vw;
         text-align: center;
         margin: 0;
     }
 
     #about>section>hgroup>h1:nth-child(2){
-        top: -13px;
-        left: 72px;
-        position: absolute;
-        display: inline-block;
-        font-size: 110px;
-        color: rgba(255, 255, 255, 0.125);
+        top: 0;
+        left: 149px;
+        font-size: 6vw;
     }
 
     #about>section>hgroup>h3{
-        margin-top: 65px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 35px;
-        margin-bottom: 0;
+        margin-top: 30px;
+        font-size: 3vw;
     }
 
     #about>section>hgroup>h4{
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 2vw;
+        margin-top: 8px;
+        margin-bottom: 0;
     }
 
-    #about>section>table>tbody>tr>td{
-        font-family: 'Josefin Sans', sans-serif;
-        height: 35px;
+    #about>section>table{
+        width: 100%;
     }
 
     #about>section>table>tbody>tr>td:nth-child(1){
-        font-weight: bolder;
-        color: #d4d300;
+        font-size: 1.5vw;
     }
 
     #about>section>table>tbody>tr>td:nth-child(2){
-        font-weight: lighter;
-        font-size: medium;
+        font-size: 1.5vw;
     }
 
     #about>section>button{
-        background-color: #FFF500;
-        font-weight: bold;
-        font-size: medium;
-        border-radius: 5px;
+        margin-top: 5px;
+        font-size: 1.6vw;
     }
 
     #about>section>button:hover{
-        color: white;
+        color: #FFF500;
         background-color: black;
-        box-shadow: 0px 3px 5px #FFF500, -0px -3px 5px #FFF500;
+        border: 1px solid white;
+        box-shadow: 3px 3px 5px #FFF500, -0px -3px 5px #FFF500;
         transition: all;
     }
 
 
+
     /*------education------*/
 
-    #education{
-        position: relative;
-        color: white;
-        background: linear-gradient(to right, #2E2E2E 50%, #262626 50%);
-    }
-
-    #education>div>svg{
-        width: 80%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
     #education>div>p>a{
-        text-decoration: none;
-        color: #FFF500;
+        font-size: 1.6vw;
     }
 
     #education>div>p{
@@ -3687,26 +3614,26 @@ textarea {
         background-color: #363632;
         color: white;
         width: 25%;
-        font-size: 1.1vw;
+        font-size: 1.6vw;
     }
 
     #education>div>p:nth-child(2){
-        position: absolute;
-        bottom: 210px;
+        font-size: 1.6vw;
+        bottom: 187px;
     }
 
     #education>div>p:nth-child(3){
-        position: absolute;
-        top: 260px;
-        left: 0;
-        right: 0;
-        margin: auto;
+        font-size: 1.6vw;
+        top: 229px;
+        right: 51px;
+        width: 26%;
     }
 
     #education>div>p:nth-child(4){
-        position: absolute;
-        right: 150px;
-        bottom: 210px;
+        font-size: 1.6vw;
+        right: 54px;
+        bottom: 164px;
+        width: 40%;
     }
 
     #education>div>p:nth-child(4)>a{
@@ -3714,407 +3641,85 @@ textarea {
     }
 
     #education>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #education>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 7vw;
     }
 
 
     /*------Skills------*/
 
-    #skills{
-        position: relative;
-        color: white;
-        background-color: #171717;
-    }
 
     #skills>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #skills>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 7vw;
     }
 
     #skills>section{
-        width: 74%;
-        height: 61%;
-        left: 224px;
-        grid-row-gap: 45px;
-        grid-template-rows: repeat(3,1fr);
-        justify-content: space-evenly;
-        display: grid;
-        top: 190px;
-        position: absolute;
-        grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 200px;
+        top: 65px;
+        right: 0;
+        bottom: 0;
+        width: 70%;
+        left: 0;
+        margin: auto;
+        grid-column-gap: 110px;
     }
 
     #skills>section>div {
         border-radius: 30%;
         width: 100%;
         height: 100%;
-    }
-
-    #skills>section>div:hover{
-        transition: all;
         box-shadow: 5px 10px 10px #5A5A5A;
-    }
-
-    #skills>section>div:nth-child(1){
-        background: url("assests/skills/CSS.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(2){
-        background: url("assests/skills/Figma-Light.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(3){
-        background: url("assests/skills/Git.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(4){
-        background: url("assests/skills/Github-Light.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(5){
-        background: url("assests/skills/Hibernate-Light.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(6){
-        background: url("assests/skills/HTML.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(7){
-        background: url("assests/skills/MySQL-Light.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(8){
-        background: url("assests/skills/Photoshop.svg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #skills>section>div:nth-child(9){
-        background: url("assests/skills/Python-Light.svg");
-        background-size: cover;
-        background-position: center;
     }
 
 
 
     /*------Assignments------*/
 
-    #assignments{
-        position: relative;
-        color: white;
-        background-color: #171414;
-        display: flex;
-        flex-direction: column;
-    }
-
     #assignments>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #assignments>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
-    }
-
-    #assignments>section{
-        display: flex;
-        width: 87%;
-        height: 54%;
-        align-content: center;
-        justify-content: space-evenly;
-        background-color: #2E2E2E;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    #assignments>section>svg{
-        align-self: center;
-    }
-
-    #assignments>section>div{
-        height: 60%;
-        width: 80%;
-        align-self: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #assignments>section>div>div{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        width: 22%;
-        height: 100%;
-        color: black;
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 20px;
-    }
-
-    #assignments>section>div>div>svg,p,a{
-        align-self: center;
-    }
-
-    #assignments>section>div>div>svg{
-        width: 40%;
-        height: 38%;
-    }
-
-    #assignments>section>div>div>p{
-        font-size: 1.2vw;
-        font-weight: bold;
-    }
-
-    #assignments>section>div>div>a{
-        font-size: 1.1vw;
-        padding: 2px 20px;
-        text-decoration: none;
-        background-color: #FFF500;
-        border: 1px solid black;
-        color: black;
-        border-radius: 20px;
-    }
-
-    #assignments>section>div>div:hover{
-        transition: 1s all;
-        background-color: #FFF500;
-        box-shadow: 5px 5px 5px #FFF500;
-    }
-
-    #assignments>section>div>div:hover svg{
-        transition: 1s all;
-        width: 100px;
-        height: 100px;
-    }
-
-    #assignments>section>div>div:hover p{
-        transition: 1s all;
-        font-size: large;
-    }
-
-    #assignments>section>div>div:hover a{
-        transition: 1s all;
-        padding: 3px 20px;
-        background-color: black;
-        border: 1px solid #FFF500;
-        color: #FFF500;
-        box-shadow: 2px 2px 5px black;
+        font-size: 7vw;
     }
 
     #assignments>a{
-        position: absolute;
-        bottom: 75px;
-        font-weight: bold;
-        font-family: 'Josefin Sans', sans-serif;
-        text-decoration: none;
-        padding: 5px 20px;
-        background-color: #FFF500;
-        color: black;
-        border-radius: 10px;
-        border: 1px solid black;
+        bottom: 60px;
     }
-
-    #assignments>a:hover{
-        transition: all;
-        background-color: black;
-        color: #FFF500;
-        box-shadow: 2px 2px 5px #FFF500;
-    }
-
-
-
 
     /*------Projects------*/
 
-    #projects{
-        position: relative;
-        color: white;
-        background-color: #262626;
-    }
-
     #projects>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #projects>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
-    }
-
-    #projects>section{
-        display: flex;
-        width: 87%;
-        height: 60%;
-        align-content: center;
-        justify-content: space-evenly;
-        background-color: #2E2E2E;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    #projects>section>div{
-        width: 83%;
-        align-self: center;
-        display: flex;
-        justify-content: space-between;
-        height: 65%;
-    }
-
-    #projects>section>svg{
-        height: 20%;
-        align-self: center;
-    }
-
-    #projects>section>div>div{
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        width: 23.5%;
-        height: 100%;
-        border-radius: 10px;
-    }
-
-    #projects>section>div>div:nth-child(1){
-        background: url("assests/Projects/Hotel Management System.png");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #projects>section>div>div:nth-child(2){
-        background: url("assests/Projects/Chat Application.png");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #projects>section>div>div:nth-child(3){
-        background: url("assests/Projects/Hostel Management System.png");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #projects>section>div>div:nth-child(4){
-        background: url("assests/Projects/Basic Chat Application.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    #projects>section>div>div>p{
-        font-size: 1.1vw;
-        color: black;
-        padding: 5px 6px;
-        background-color: #FFF500;
-        align-self: end;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: bold;
-        border-radius: 5px;
-        border: 1px solid black;
-    }
-
-    #projects>section>div>div>p:hover{
-        color: #FFF500;
-        background-color: black;
-        box-shadow: 2px 2px 5px #FFF500;
+        font-size: 7vw;
     }
 
 
     /*------Gallery------*/
 
     #gallery{
-        position: relative;
-        color: white;
-        background-color: #171717;
-        height: 150vh;
+        height: 160vh;
     }
 
     #gallery>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #gallery>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
+        font-size: 7vw;
     }
 
     #gallery>section{
-        width: 87%;
-        height: 80%;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 175px;
-        margin: auto;
+        top: 145px;
     }
 
     #gallery>section>section{
@@ -4126,234 +3731,44 @@ textarea {
         gap: 10px;
     }
 
-    #gallery>section>section>div:nth-child(1){
-        background: url("assests/images/Gallery(1).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(2){
-        background: url("assests/images/Gallery(2).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(3){
-        background: url("assests/images/Gallery(3).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(4){
-        background: url("assests/images/Gallery(4).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(5){
-        grid-row: 2/4;
-        grid-column: 1/2;
-        background: url("assests/images/Gallery(5).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(6){
-        background: url("assests/images/Gallery(6).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(7){
-        background: url("assests/images/Gallery(7).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(8){
-        background: url("assests/images/Gallery(8).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(9){
-        background: url("assests/images/Gallery(9).webp");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(10){
-        background: url("assests/images/Gallery(10).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    #gallery>section>section>div:nth-child(11){
-        background: url("assests/images/Gallery(11).jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-
-
     /*------Contact us------*/
 
-    #contact{
-        position: relative;
-        color: white;
-        background-color: #262626;
-        height: 100vh;
-    }
-
     #contact>hgroup>h1{
-        font-size: 4vw;
-        text-align: center;
-        margin: 0;
+        font-size: 3.5vw;
     }
 
     #contact>hgroup>h1:nth-child(2){
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        display: inline-block;
-        font-size: 8vw;
-        color: rgba(255, 255, 255, 0.125);
-    }
-
-    #contact>section{
-        margin-top: 1%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #contact>section>div:nth-child(1){
-        align-self: center;
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    #contact>section>div:nth-child(1)>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #contact>section>div:nth-child(1)>div>a{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
-    }
-
-    #contact>section>div:nth-child(1)>div>h4{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
-    }
-
-    #contact>section>div:nth-child(1)>div>p{
-        margin-top: 4px;
-        margin-bottom: 0;
-        font-size: 0.9vw;
-        align-self: center;
-        font-family: "Josefin Sans", cursive;
+        font-size: 7vw;
     }
 
     #contact>section>div:nth-child(2){
-        align-self: center;
-        display: flex;
-        justify-content: center;
-        width: 43vw;
-        height: 63vh;
+        width: 54vw;
     }
 
     #contact>section>div:nth-child(2)>div{
-        background: url("assests/images/About me.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 47%;
-        height: 100%;
-    }
-
-    /* Apply some basic styles to the form and fieldset */
-    #form {
-        background-color: white;
-        padding: 9px 9px;
-        border: 1px solid #ccc;
-    }
-
-    #form>fieldset {
-        border: none;
+        width: 65%;
     }
 
     /* Style the input and textarea fields */
     #form>fieldset>input[type="text"],
     input[type="email"],
     textarea {
-        resize: none;
-        margin-bottom: 27px;
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    #form>fieldset>textarea{
-        height: 82px;
-    }
-
-    /* Style the button */
-    #form>fieldset>button {
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    #form>fieldset>button:hover {
-        background-color: #0056b3;
-    }
-
-    #contact>section>div:nth-child(3){
-        display: flex;
-        align-self: center;
-        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     #contact>section>div:nth-child(3)>img{
         padding-right: 10px;
-        width: 2vw;
-        height: 2vw;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #contact>section>div:nth-child(1)>div>p {
+        font-size: 1.5vw;
     }
 
     /*------footer------*/
 
-    #footer{
-        border-top: 2px solid #FFF500;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 8vh;
-        text-align: center;
-        /* height: 23%; */
-        background-color: #2E2E2E;
-        color: white;
-    }
-
     #footer>small{
-        font-size: 1.1vw;
-        font-family: 'Roboto Slab';
-        text-decoration: none;
+        font-size: 1.3vw;
     }
 }
