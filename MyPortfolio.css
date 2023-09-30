@@ -132,6 +132,42 @@ header>nav>li>a:hover{
     background: url(assests/images/Main.png);
     background-size: cover;
     background-position: center;
+
+    animation-name: animateHomeImage;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes animateHomeImage {
+    0%{
+        top: 0;
+        bottom: 0;
+        right: 7%;
+    }
+
+    25%{
+        bottom: 20px;
+        right: 6%;
+    }
+
+    50%{
+        top: 0;
+        bottom: 0;
+        right: 7%;
+    }
+
+    75%{
+        top: 20px;
+        bottom: 0;
+        right: 8%;
+    }
+
+    100%{
+        top: 0;
+        bottom: 0;
+        right: 7%;
+    }
 }
 
 /*------about------*/
