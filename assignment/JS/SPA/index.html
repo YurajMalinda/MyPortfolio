@@ -93,13 +93,13 @@
                             </div>
                             <div class="mb-3">
                                 <label for="cusSalary" class="form-label">Customer Salary:</label>
-                                <input type="password" class="form-control form-control-sm" id="cusSalary">
+                                <input type="text" class="form-control form-control-sm" id="cusSalary">
                             </div>
                             <div class="btn-group">
-                                <button id="btnSave" type="submit" class="btn btn-success btn-sm">Submit</button>
-                                <button type="submit" class="btn btn-primary btn-sm">Update</button>
-                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                                <button type="button" class="btn btn-light btn-sm">Clear</button>
+                                <button id="btnSave" class="btn btn-success btn-sm">Save</button>
+                                <button class="btn btn-primary btn-sm">Update</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                                <button id="btnClear" class="btn btn-light btn-sm">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl d-flex justify-content-center flex-column">
                                 <!-- Button trigger modal -->
-                                <button id="getAll" type="button" class="btn btn-success btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button id="getAll" class="btn btn-success btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     View All
                                 </button>
 
@@ -152,25 +152,7 @@
                                                         <th scope="col" class="bg-success text-white">Salary</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry the Bird</td>
-                                                        <td>Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
+                                                    <tbody id="modalTable">
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -191,24 +173,7 @@
                     </tr>
                     </thead>
                     <tbody id="tblCustomer">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -517,7 +482,7 @@
 </section>
 
 <script src="../../CSS_Framework/assests/Bootstrap/js/bootstrap.js"></script>
-
+<script src="assests/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script>
     let home = document.querySelector("#homeContent");
     let cus = document.querySelector("#customerContent");
@@ -562,27 +527,98 @@
         order.style.display="block";
     });
 
-    var customerArray= [];
-    let btnSave = document.querySelector("#btnSave");
-    let txtId = document.querySelector("#cusId");
-    let txtName = document.querySelector("#cusName");
-    let txtAddress = document.querySelector("#cusAddress");
-    let txtSalary = document.querySelector("#cusSalary");
-    let tbody = document.querySelector("#tblCustomer");
-    let getAll = document.querySelector("#getAll");
 
 
+    var customers = [];
 
-    btnSave.addEventListener("click", function (){
-       var customer={
-           id: txtId.value,
-           name: txtName.value,
-           address: txtAddress.value,
-           salary: txtSalary.value
+    $("#btnSave").click(function () {
+
+        let cus_ID = $("#cusId").val();
+        let cus_Name = $("#cusName").val();
+        let cus_Address = $("#cusAddress").val();
+        let cus_Salary = $("#cusSalary").val();
+
+        var customer = {
+            id: cus_ID,
+            name: cus_Name,
+            address: cus_Address,
+            salary: cus_Salary
         }
 
-        customerArray.push(customer);
+        //add customer to object to the array
+        customers.push(customer);
+        getAllCustomers();
+        console.log(customers);
     });
+
+    $("#getAll").click(function () {
+        getAllCustomers();
+    });
+
+    getAllCustomers();
+
+    function getAllCustomers(){
+        $("#tblCustomer").empty();
+        $("#modalTable").empty();
+
+        for (let i = 0; i < customers.length; i++) {
+            let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+            $("#tblCustomer").append(row);
+            $("#modalTable").append(row);
+        }
+    }
+
+    $("#btnClear").click(function (){
+       $("#cusId").val("");
+        $("#cusName").val("");
+        $("#cusAddress").val("");
+        $("#cusSalary").val("");
+    });
+
+    // var customerArray= [];
+    // let btnSave = document.querySelector("#btnSave");
+    // let txtId = document.querySelector("#cusId");
+    // let txtName = document.querySelector("#cusName");
+    // let txtAddress = document.querySelector("#cusAddress");
+    // let txtSalary = document.querySelector("#cusSalary");
+    // let tbody = document.querySelector("#tblCustomer");
+    // let getAll = document.querySelector("#getAll");
+    //
+    //
+    //
+    // btnSave.addEventListener("click", function (){
+    //    var customer={
+    //        id: txtId.value,
+    //        name: txtName.value,
+    //        address: txtAddress.value,
+    //        salary: txtSalary.value
+    //     }
+    //
+    //     customerArray.push(customer);
+    // });
+    //
+    // //load all customers from the array to the table
+    // getAll.addEventListener("click", function () {
+    //     for (let i = 0; i < customerArray.length; i++) {
+    //
+    //         let tr = document.createElement("tr");
+    //         let td1 = document.createElement("td");
+    //         td1.textContent = customerArray[i].id;
+    //         let td2 = document.createElement("td");
+    //         td2.textContent = customerArray[i].name;
+    //         let td3 = document.createElement("td");
+    //         td3.textContent = customerArray[i].address;
+    //         let td4 = document.createElement("td");
+    //         td4.textContent = customerArray[i].salary;
+    //         tr.append(td1, td2, td3, td4);
+    //         tbody.append(tr);
+    //     }
+    // });
 </script>
 </body>
 </html>
