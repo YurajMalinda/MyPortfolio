@@ -1109,6 +1109,7 @@ textarea {
         height: 55%;
         width: 100%;
         right: 2px;
+        animation: none;
     }
 
     /*------about------*/
