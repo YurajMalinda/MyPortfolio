@@ -5,70 +5,70 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="../../CSS_Framework/assests/Bootstrap/css/bootstrap.css">
     <title>SPA</title>
+    <style>
+        #navUL>li>a{
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<nav id="dashboardContent" class="navbar navbar-expand-lg bg-success">
-    <div class="container-fluid d-flex">
-        <a class="navbar-brand text-white" href="#">POS System</a>
+<!--navbar-->
+<nav id="NavBar" class="navbar navbar-expand-lg bg-success shadow-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">POS System</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex" id="navbarNav">
-            <ul class="navbar-nav nav-underline d-flex ">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="navUL" class="navbar-nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#" id="linkHome">Home</a>
+                    <a class="nav-link" href="#" id="linkHome">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" id="linkCustomer">Customers</a>
+                    <a class="nav-link" href="#" id="linkCustomer">Customer</a>
                 </li>
-                <li class="nav-item" >
+                <li class="nav-item">
                     <a class="nav-link" href="#" id="itemLink">Items</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="orderLink">Orders</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log Out</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section id="homeContent">
-    <div class="container-fluid mt-5">
-        <div class="row d-flex justify-content-evenly ">
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body bg-success">
-                        <img src="assests/customer.png" class="img-thumbnail" alt="...">
-                        <p class="text-center h1">0</p>
-                    </div>
+<!--Home-->
+<div id="homeContent" class="container-fluid mt-5">
+    <div class="row d-flex justify-content-evenly ">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body bg-success">
+                    <img src="assests/customer.png" class="img-thumbnail" alt="...">
+                    <p class="text-center h1">0</p>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body bg-success">
-                        <img src="assests/shopping.png" class="img-thumbnail" alt="...">
-                        <p class="h1 text-center">0</p>
-                    </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body bg-success">
+                    <img src="assests/shopping.png" class="img-thumbnail" alt="...">
+                    <p class="h1 text-center">0</p>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="card">
-                    <div class="card-body bg-success">
-                        <img src="assests/order.png" class="img-thumbnail" alt="...">
-                        <p class="text-center h1">0</p>
-                    </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body bg-success">
+                    <img src="assests/order.png" class="img-thumbnail" alt="...">
+                    <p class="text-center h1">0</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 
+<!--Customers-->
 <section id="customerContent">
     <div class="container-fluid mt-5 d-flex flex-column">
         <div class="row justify-content-center">
@@ -134,8 +134,8 @@
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl d-flex justify-content-center flex-column">
                                 <!-- Button trigger modal -->
-                                <button id="getAll" class="btn btn-success btn-sm align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    View All
+                                <button id="getAll" class="btn btn-success w-25 align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Get All
                                 </button>
 
                                 <!-- Modal -->
@@ -181,6 +181,7 @@
     </div>
 </section>
 
+<!--Items-->
 <section id="itemContent">
     <div class="container-fluid mt-5 d-flex flex-column">
         <div class="row justify-content-center">
@@ -326,6 +327,7 @@
     </div>
 </section>
 
+<!--Orders-->
 <section id="orderContent">
     <div class="container-fluid">
         <div class="card m-3">
@@ -481,7 +483,6 @@
     </div>
 </section>
 
-<script src="../../CSS_Framework/assests/Bootstrap/js/bootstrap.js"></script>
 <script src="assests/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 <script>
     let home = document.querySelector("#homeContent");
@@ -575,9 +576,9 @@
 
     $("#btnClear").click(function (){
        $("#cusId").val("");
-        $("#cusName").val("");
-        $("#cusAddress").val("");
-        $("#cusSalary").val("");
+       $("#cusName").val("");
+       $("#cusAddress").val("");
+       $("#cusSalary").val("");
     });
 
     // var customerArray= [];
@@ -620,5 +621,6 @@
     //     }
     // });
 </script>
+<script src="../../CSS_Framework/assests/Bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
