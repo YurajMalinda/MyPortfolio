@@ -1830,6 +1830,7 @@ textarea {
         height: 55%;
         width: 100%;
         right: 2px;
+        animation: none;
     }
 
     /*------about------*/
@@ -2554,6 +2555,7 @@ textarea {
         height: 60%;
         width: 82%;
         right: 49px;
+        animation: none;
     }
 
     /*------about------*/
@@ -3236,6 +3238,7 @@ textarea {
         height: 78%;
         width: 52%;
         right: 3%;
+        animation: none;
     }
 
 
