@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-<!--    <meta http-equiv="refresh" content="1">-->
+    <!--    <meta http-equiv="refresh" content="1">-->
     <!--
          "index" (allow indexing),
          "noindex" (prevent indexing),
@@ -335,6 +335,9 @@
                 </div>
             </section>
         </section>
+        <section id="loader">
+            <div></div>
+        </section>
     </main>
 
 
@@ -342,7 +345,14 @@
         <small>Copyright &copy2023 All rights reserved | This website designed & developed by
             Yuraj Malinda.</small>
     </footer>
-
+    <script src="assignment/JS/SPA/assests/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).on('load',function (){
+            // $("#loader").css('display','none');
+            $("#loader").fadeOut(1000);
+            console.log("Window is fully loaded");
+        });
+    </script>
 
 </body>
 </html>

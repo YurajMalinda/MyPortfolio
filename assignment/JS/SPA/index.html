@@ -96,10 +96,10 @@
                                 <input type="text" class="form-control form-control-sm" id="cusSalary">
                             </div>
                             <div class="btn-group">
-                                <button id="btnSave" class="btn btn-success btn-sm">Save</button>
-                                <button class="btn btn-primary btn-sm">Update</button>
-                                <button class="btn btn-danger btn-sm">Delete</button>
-                                <button id="btnClear" class="btn btn-light btn-sm">Clear</button>
+                                <button id="btnSave" type="button" class="btn btn-outline-success btn-sm">Save</button>
+                                <button class="btn btn-outline-primary btn-sm" type="button">Update</button>
+                                <button class="btn btn-outline-danger btn-sm" type="button">Delete</button>
+                                <button id="btnClear" class="btn btn-outline-secondary btn-sm" type="button">Clear</button>
                             </div>
                         </form>
                     </div>
@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                            <button type="submit" class="btn btn-success btn-sm mb-2">Search</button>
+                                            <button type="button" class="btn btn-outline-success btn-sm mb-2">Search</button>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-xxl-3">
                                             <select class="form-select form-select-sm" aria-label="Default select example" >
@@ -134,7 +134,7 @@
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl d-flex justify-content-center flex-column">
                                 <!-- Button trigger modal -->
-                                <button id="getAll" class="btn btn-success w-25 align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button id="getAll" type="button" class="btn btn-outline-success w-25 align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Get All
                                 </button>
 
@@ -208,10 +208,12 @@
                                 <label for="exampleInputQuantity" class="form-label">Item Quantity:</label>
                                 <input type="password" class="form-control form-control-sm" id="exampleInputQuantity">
                             </div>
-                            <button type="submit" class="btn btn-success btn-sm">Submit</button>
-                            <button type="submit" class="btn btn-primary btn-sm">Update</button>
-                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                            <button type="button" class="btn btn-light btn-sm">Clear</button>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-success btn-sm">Submit</button>
+                                <button type="button" class="btn btn-outline-primary btn-sm">Update</button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm">Clear</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -230,10 +232,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-2">
-                                            <button type="submit" class="btn btn-success btn-sm">Search</button>
+                                            <button type="button" class="btn btn-outline-success btn-sm mb-2">Search</button>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-5 col-xl-5 col-xxl-3">
-                                            <select class="form-select form-select-sm w-25" aria-label="Default select example" >
+                                            <select class="form-select form-select-sm" aria-label="Default select example" >
                                                 <option selected>Code</option>
                                                 <option value="1">Name</option>
                                                 <option value="2">Price</option>
@@ -245,8 +247,8 @@
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl d-flex justify-content-center flex-column">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-success btn-sm align-self-end w-25" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    View All
+                                <button type="button" class="btn btn-outline-success w-25 align-self-end" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    Get All
                                 </button>
 
                                 <!-- Modal -->
@@ -264,24 +266,6 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry the Bird</td>
-                                                        <td>Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -302,24 +286,6 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>Bird</td>
-                        <td>@twitter</td>
-                    </tr>
                     </tbody>
                 </table>
             </div>
@@ -412,7 +378,7 @@
                                         <input type="text" class="form-control form-control-sm" placeholder="Quantity" aria-label="Quantity" id="orderQty">
                                     </div>
                                     <div class="col-12 d-flex flex-column">
-                                        <button type="submit" class="btn btn-success btn-sm align-self-end">Place Order</button>
+                                        <button type="button" class="btn btn-outline-success btn-sm align-self-end">Place Order</button>
                                     </div>
                                 </div>
                             </div>
@@ -455,24 +421,6 @@
                                     <th scope="col" class="bg-success">Handle</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -484,6 +432,7 @@
 </section>
 
 <script src="assests/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../../CSS_Framework/assests/Bootstrap/js/bootstrap.js"></script>
 <script>
     let home = document.querySelector("#homeContent");
     let cus = document.querySelector("#customerContent");
@@ -545,11 +494,9 @@
             address: cus_Address,
             salary: cus_Salary
         }
-
         //add customer to object to the array
         customers.push(customer);
         getAllCustomers();
-        console.log(customers);
     });
 
     $("#getAll").click(function () {
@@ -572,7 +519,32 @@
             $("#tblCustomer").append(row);
             $("#modalTable").append(row);
         }
+        bindEvents();
     }
+
+    function bindEvents(){
+        $('#tblCustomer>tr').click(function () {
+            // console.log(this);//tr -> this will return tr html element
+            // console.log($(this));//jquery ob //if we want to access jQuery method we have to convert it to a jquery object
+            // console.log($(this).text()); // now here it will return all the text of tr
+
+            let id = $(this).children(':nth-child(1)').text();
+            let name = $(this).children(':nth-child(2)').text();
+            let address = $(this).children(':nth-child(3)').text();
+            let salary = $(this).children(':nth-child(4)').text();
+
+            setTextFieldValues(id,name,address,salary);
+        });
+    }
+
+    function setTextFieldValues(id, name, address, salary) {
+        $("#cusId").val(id);
+        $("#cusName").val(name);
+        $("#cusAddress").val(address);
+        $("#cusSalary").val(salary);
+    }
+
+
 
     $("#btnClear").click(function (){
        $("#cusId").val("");
@@ -580,6 +552,7 @@
        $("#cusAddress").val("");
        $("#cusSalary").val("");
     });
+
 
     // var customerArray= [];
     // let btnSave = document.querySelector("#btnSave");
@@ -621,6 +594,5 @@
     //     }
     // });
 </script>
-<script src="../../CSS_Framework/assests/Bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
