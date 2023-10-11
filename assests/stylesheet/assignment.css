@@ -1,38 +1,20 @@
 section{
     position: relative;
-    height: 300vh;
+    height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #171717;
-}
-
-.topic{
-    position: relative;
-    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
-    height: 33%;
-}
-
-.topic>h1{
-    font-size: 2.5vw;
-    margin-bottom: 45px;
-    text-align: center;
-    color: #FFF500;
-    font-family: 'Roboto Slab', serif;
 }
 
 .topic1{
-    position: relative;
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    height: 19%;
+    height: 57vh;
 }
 
-.topic1>h1{
+section>h1{
     font-size: 2.5vw;
     margin-bottom: 45px;
     text-align: center;
@@ -68,7 +50,17 @@ section{
     display: grid;
 }
 
+#bootstrapAssignments{
+    height: 100%;
+    position: relative;
+    margin-left: 66px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    display: grid;
+}
+
 .assignments{
+    position: relative;
     flex-direction: column;
     display: flex;
     justify-content: center;
