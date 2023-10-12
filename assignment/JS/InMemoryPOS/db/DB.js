@@ -1,3 +1,3 @@
-var customers = [];
-var items = [];
-var orders = [orderDetails = []];
+var customersDB = [];
+var itemsDB = [];
+var ordersDB = [orderDetails = []];

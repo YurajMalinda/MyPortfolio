@@ -1,3 +1,6 @@
 let CustomerModel = {
-    // ---add arguments---
+    id :"",
+    name : "",
+    address: "",
+    salary: 0
 }
