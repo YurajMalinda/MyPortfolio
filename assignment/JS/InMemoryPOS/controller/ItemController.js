@@ -84,6 +84,8 @@ function bindTableRowEvents() {
         $("#txtItemName").val(name);
         $("#txtItemPrice").val(price);
         $("#txtItemQuantity").val(quantity);
+
+        $("#btnDeleteItem").prop("disabled", false);
     });
 }
 

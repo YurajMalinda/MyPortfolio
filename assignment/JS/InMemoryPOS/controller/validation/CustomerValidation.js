@@ -15,10 +15,10 @@ function clearCustomerInputFields(){
     $("#txtCusId, #txtCusName, #txtCusAddress, #txtCusSalary").val("");
     $("#txtCusId, #txtCusName, #txtCusAddress, #txtCusSalary").css("border", "1px solid #ced4da");
     $("#txtCusId").focus();
-    setBtnGroup();
+    setBtnGroupCustomer();
 }
 
-setBtnGroup();
+setBtnGroupCustomer();
 
 $("#txtCusId, #txtCusName, #txtCusAddress, #txtCusSalary").on("keydown keyup", function (e){
     let indexNo = cus_vArray.indexOf(cus_vArray.find((c) => c.field.attr("id") == e.target.id));
@@ -27,34 +27,34 @@ $("#txtCusId, #txtCusName, #txtCusAddress, #txtCusSalary").on("keydown keyup", f
         e.preventDefault();
     }
 
-    checkValidations(cus_vArray[indexNo]);
+    checkValidationsCustomer(cus_vArray[indexNo]);
 
-    setBtnGroup();
+    setBtnGroupCustomer();
 
     if (e.key == "Enter") {
         if (e.target.id != cus_vArray[cus_vArray.length-1].field.attr("id")) {
-            if (checkValidations(cus_vArray[indexNo])) {
+            if (checkValidationsCustomer(cus_vArray[indexNo])) {
                 cus_vArray[indexNo+1].field.focus();
             }
         }else {
-            if (checkValidations(cus_vArray[indexNo])) {
+            if (checkValidationsCustomer(cus_vArray[indexNo])) {
                 saveCustomer();
             }
         }
     }
 });
 
-function checkValidations(object){
+function checkValidationsCustomer(object){
     if(object.regex.test(object.field.val())){
-        setBorder(true, object)
+        setBorderCustomer(true, object)
         return true;
     }
-    setBorder(false, object)
+    setBorderCustomer(false, object)
     return false;
 }
 
 
-function setBorder(bool, object) {
+function setBorderCustomer(bool, object) {
     if (!bool){
         if(object.field.val().length >=1){
             object.field.css("border", "2px solid red");
@@ -70,18 +70,18 @@ function setBorder(bool, object) {
     }
 }
 
-function checkAll(){
+function checkAllCustomer(){
     for (let i = 0; i < cus_vArray.length; i++) {
-        if (!checkValidations(cus_vArray[i])) return false;
+        if (!checkValidationsCustomer(cus_vArray[i])) return false;
     }
     return true;
 }
 
-function setBtnGroup() {
+function setBtnGroupCustomer() {
     $("#btnDeleteCustomer").prop("disabled", true);
     $("#btnUpdateCustomer").prop("disabled", true);
 
-    if (checkAll()){
+    if (checkAllCustomer()){
         $("#btnSaveCustomer").prop("disabled", false);
     }else{
         $("#btnSaveCustomer").prop("disabled", true);

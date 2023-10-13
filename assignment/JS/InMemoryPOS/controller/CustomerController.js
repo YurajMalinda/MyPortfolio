@@ -2,7 +2,7 @@ getAllCustomer();
 
 // --------------Save btn event---------------------------
 $("#btnSaveCustomer").click(function (){
-    if (checkAll()){
+    if (checkAllCustomer()){
         saveCustomer();
     }else {
         alert("Something went wrong!");
@@ -68,12 +68,12 @@ function getAllCustomer(){
         $("#tblCustomer").append(row);
         $("#modalTable").append(row);
 
-        bindTableRowEvents();
+        bindTableRowEventsCustomer();
     }
 }
 
 // --------------Bind row to fields function---------------------------
-function bindTableRowEvents() {
+function bindTableRowEventsCustomer() {
     $("#tblCustomer>tr").click(function (){
         let id = $(this).children().eq(0).text();
         let name = $(this).children().eq(1).text();
@@ -84,6 +84,8 @@ function bindTableRowEvents() {
         $("#txtCusName").val(name);
         $("#txtCusAddress").val(address);
         $("#txtCusSalary").val(salary);
+
+        $("#btnDeleteCustomer").prop("disabled", false);
     });
 }
 
