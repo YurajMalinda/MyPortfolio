@@ -2,7 +2,7 @@ getAllItem();
 
 // --------------Save btn event---------------------------
 $("#btnSaveItem").click(function (){
-    if (checkAll()){
+    if (checkAllItems()){
         saveItem();
     }else {
         alert("Something went wrong!");
@@ -68,12 +68,12 @@ function getAllItem(){
         $("#tblItem").append(row);
         $("#modalItemTable").append(row);
 
-        bindTableRowEvents();
+        bindTableRowEventsItem();
     }
 }
 
 // --------------Bind row to fields function---------------------------
-function bindTableRowEvents() {
+function bindTableRowEventsItem() {
     $("#tblItem>tr").click(function (){
         let code = $(this).children().eq(0).text();
         let name = $(this).children().eq(1).text();

@@ -15,10 +15,10 @@ function clearItemInputFields(){
     $("#txtItemCode, #txtItemName, #txtItemPrice, #txtItemQuantity").val("");
     $("#txtItemCode, #txtItemName, #txtItemPrice, #txtItemQuantity").css("border", "1px solid #ced4da");
     $("#txtItemCode").focus();
-    setBtnGroup();
+    setBtnGroupItem();
 }
 
-setBtnGroup();
+setBtnGroupItem();
 
 $("#txtItemCode, #txtItemName, #txtItemPrice, #txtItemQuantity").on("keydown keyup", function (e){
     let indexNo = item_vArray.indexOf(item_vArray.find((c) => c.field.attr("code") === e.target.code));
@@ -27,33 +27,33 @@ $("#txtItemCode, #txtItemName, #txtItemPrice, #txtItemQuantity").on("keydown key
         e.preventDefault();
     }
 
-    checkValidations(item_vArray[indexNo]);
+    checkValidationsItem(item_vArray[indexNo]);
 
-    setBtnGroup();
+    setBtnGroupItem();
 
     if (e.key == "Enter") {
         if (e.target.code != item_vArray[item_vArray.length-1].field.attr("code")) {
-            if (checkValidations(item_vArray[indexNo])) {
+            if (checkValidationsItem(item_vArray[indexNo])) {
                 item_vArray[indexNo+1].field.focus();
             }
         }else {
-            if (checkValidations(item_vArray[indexNo])) {
+            if (checkValidationsItem(item_vArray[indexNo])) {
                 saveItem();
             }
         }
     }
 });
 
-function checkValidations(object){
+function checkValidationsItem(object){
     if(object.regex.test(object.field.val())){
-        setBorder(true, object)
+        setBorderItem(true, object)
         return true;
     }
-    setBorder(false, object)
+    setBorderItem(false, object)
     return false;
 }
 
-function setBorder(bool, object) {
+function setBorderItem(bool, object) {
     if (!bool){
         if(object.field.val().length >=1){
             object.field.css("border", "2px solid red");
@@ -69,18 +69,18 @@ function setBorder(bool, object) {
     }
 }
 
-function checkAll(){
+function checkAllItems(){
     for (let i = 0; i < item_vArray.length; i++) {
-        if (!checkValidations(item_vArray[i])) return false;
+        if (!checkValidationsItem(item_vArray[i])) return false;
     }
     return true;
 }
 
-function setBtnGroup() {
+function setBtnGroupItem() {
     $("#btnDeleteItem").prop("disabled", true);
     $("#btnUpdateItem").prop("disabled", true);
 
-    if (checkAll()){
+    if (checkAllItems()){
         $("#btnSaveItem").prop("disabled", false);
     }else{
         $("#btnSaveItem").prop("disabled", true);
