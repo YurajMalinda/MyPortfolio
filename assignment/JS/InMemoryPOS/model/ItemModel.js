@@ -1,4 +1,4 @@
-let item={
+let itemModel = {
     code:"",
     description:"",
     qtyOnHand:0,
