@@ -41,6 +41,7 @@ function saveCustomer() {
         clearCustomerInputFields();
         getAllCustomer();
         alert("Customer added!");
+        loadCustomerIds();
     }else{
         alert("Customer exists!")
         clearCustomerInputFields();

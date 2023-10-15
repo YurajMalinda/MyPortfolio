@@ -41,6 +41,7 @@ function saveItem() {
         clearItemInputFields();
         getAllItem();
         alert("Item added!");
+        loadItemCodes();
     }else{
         alert("Item exists!")
         clearItemInputFields();
