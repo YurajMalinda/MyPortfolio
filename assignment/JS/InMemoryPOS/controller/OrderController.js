@@ -157,7 +157,6 @@ function addToPlaceOrderTable() {
         loadAllOrderDetails();
     }else {
         alert("Please check the quantity!. Order has been added unsuccessfully!.");
-        loadAllOrderDetails();
     }
 }
 
@@ -207,6 +206,22 @@ function loadAllOrderDetails() {
     }
 }
 
+// function bindTableRowEventsOrder() {
+//     $("#tblPlaceOrder>tr").click(function (){
+//         let itemCode = $(this).children().eq(0).text();
+//         let name = $(this).children().eq(1).text();
+//         let price = $(this).children().eq(2).text();
+//         let quantity = $(this).children().eq(3).text();
+//         let total = $(this).children().eq(4).text()
+//
+//         $("#itemId").val(itemCode);
+//         $("#itemName").val(name);
+//         $("#price").val(price);
+//         $("#quantity").val(quantity);
+//         $("#total").val(total);
+//     });
+// }
+
 function calculateTotal() {
     let Total =0;
     for (let i = 0; i <cartDetails.length; i++) {
@@ -230,22 +245,6 @@ function calculateBalance() {
         $("#balance").val(balance.toFixed(2));
     }else {
         $("#balance").val(0.00);
-    }
-}
-
-function enabledOrDisabledBtn() {
-    if (($("#selectFormCustomer").val() !== null) && ($("#selectItemFormItem").val() !== null) &&  ($("#cash").val().length!= 0) ){
-        $("#btnPurchase").prop("disabled",false);
-    }else {
-        $("#btnPurchase").prop("disabled",true);
-    }
-}
-
-function enabledCartBtn() {
-    if (($("#selectFormCustomer").val() !== null) && ($("#selectItemFormItem").val() !== null) && ($("#orderQty").val().length!= 0)  ){
-        $("#btnPlaceOrder").prop("disabled",false);
-    }else {
-        $("#btnPlaceOrder").prop("disabled",true);
     }
 }
 
