@@ -255,7 +255,8 @@ function doubleClickItem() {
         let confirmation = confirm("Are you want to delete this order?");
         if (confirmation){
             $(this).remove();
-            alert("Order removed!");;
+            alert("Order removed!");
+            clearPlaceOrderTextFields();
         }else{
             alert("Order not removed")
         }
