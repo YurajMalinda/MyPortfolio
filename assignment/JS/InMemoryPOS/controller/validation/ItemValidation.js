@@ -26,7 +26,6 @@ $("#txtItemCode, #txtItemName, #txtItemPrice, #txtItemQuantity").on("keydown key
     if (e.key == "Tab") {
         e.preventDefault();
     }
-
     checkValidationsItem(item_vArray[indexNo]);
 
     setBtnGroupItem();

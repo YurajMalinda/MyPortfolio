@@ -1,3 +1,6 @@
+main{
+    background-color: #171717;
+}
 section{
     position: relative;
     height: 100vh;
@@ -5,7 +8,6 @@ section{
     padding-right: 100px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #171717;
     display: flex;
     flex-direction: column;
 }
@@ -23,7 +25,6 @@ section>h1{
 }
 
 #cssAssignments{
-    height: 100%;
     position: relative;
     margin-left: 66px;
     grid-template-columns: repeat(4,1fr);
@@ -59,13 +60,22 @@ section>h1{
     display: grid;
 }
 
+#jsAssignments{
+    position: relative;
+    margin-left: 66px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    display: grid;
+    row-gap: 25px;
+}
+
 .assignments{
     position: relative;
     flex-direction: column;
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 100%;
+    height: 40vh;
     color: black;
     background-color: white;
     border: 2px solid black;

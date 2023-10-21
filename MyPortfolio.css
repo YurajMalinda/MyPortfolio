@@ -129,7 +129,7 @@ header>nav>li>a:hover{
     position: absolute;
     right: 7%;
     /* top: 34px; */
-    background: url(assests/images/Main.png);
+    background: url(assets/images/Main.png);
     background-size: cover;
     background-position: center;
 
@@ -185,7 +185,7 @@ header>nav>li>a:hover{
     margin: auto;
     width: 30%;
     height: 71%;
-    background: url("assests/images/About me.jpg");
+    background: url("assets/images/About me.jpg");
     background-position: center;
     background-size: cover;
     box-shadow: inset 5px 5px 5px #FFF500, 5px 5px 5px #FFF500;
@@ -385,55 +385,55 @@ header>nav>li>a:hover{
 }
 
 #skills>section>div:nth-child(1){
-    background: url("assests/skills/CSS.svg");
+    background: url("assets/skills/CSS.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(2){
-    background: url("assests/skills/Figma-Light.svg");
+    background: url("assets/skills/Figma-Light.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(3){
-    background: url("assests/skills/Git.svg");
+    background: url("assets/skills/Git.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(4){
-    background: url("assests/skills/Github-Light.svg");
+    background: url("assets/skills/Github-Light.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(5){
-    background: url("assests/skills/Hibernate-Light.svg");
+    background: url("assets/skills/Hibernate-Light.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(6){
-    background: url("assests/skills/HTML.svg");
+    background: url("assets/skills/HTML.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(7){
-    background: url("assests/skills/MySQL-Light.svg");
+    background: url("assets/skills/MySQL-Light.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(8){
-    background: url("assests/skills/Photoshop.svg");
+    background: url("assets/skills/Photoshop.svg");
     background-size: cover;
     background-position: center;
 }
 
 #skills>section>div:nth-child(9){
-    background: url("assests/skills/Python-Light.svg");
+    background: url("assets/skills/Python-Light.svg");
     background-size: cover;
     background-position: center;
 }
@@ -642,25 +642,25 @@ header>nav>li>a:hover{
 }
 
 #projects>section>div>div:nth-child(1){
-background: url("assests/Projects/Hotel Management System.png");
+background: url("assets/Projects/Hotel Management System.png");
 background-size: cover;
 background-position: center;
 }
 
 #projects>section>div>div:nth-child(2){
-background: url("assests/Projects/Chat Application.png");
+background: url("assets/Projects/Chat Application.png");
 background-size: cover;
 background-position: center;
 }
 
 #projects>section>div>div:nth-child(3){
-background: url("assests/Projects/Hostel Management System.png");
+background: url("assets/Projects/Hostel Management System.png");
 background-size: cover;
 background-position: center;
 }
 
 #projects>section>div>div:nth-child(4){
-background: url("assests/Projects/Basic Chat Application.jpg");
+background: url("assets/Projects/Basic Chat Application.jpg");
 background-size: cover;
 background-position: center;
 }
@@ -730,25 +730,25 @@ background-position: center;
 }
 
 #gallery>section>section>div:nth-child(1){
-    background: url("assests/images/Gallery(1).jpg");
+    background: url("assets/images/Gallery(1).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(2){
-    background: url("assests/images/Gallery(2).jpg");
+    background: url("assets/images/Gallery(2).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(3){
-    background: url("assests/images/Gallery(3).jpg");
+    background: url("assets/images/Gallery(3).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(4){
-    background: url("assests/images/Gallery(4).jpg");
+    background: url("assets/images/Gallery(4).jpg");
     background-position: center;
     background-size: cover;
 }
@@ -756,43 +756,43 @@ background-position: center;
 #gallery>section>section>div:nth-child(5){
     grid-row: 2/4;
     grid-column: 1/2;
-    background: url("assests/images/Gallery(5).jpg");
+    background: url("assets/images/Gallery(5).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(6){
-    background: url("assests/images/Gallery(6).jpg");
+    background: url("assets/images/Gallery(6).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(7){
-    background: url("assests/images/Gallery(7).jpg");
+    background: url("assets/images/Gallery(7).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(8){
-    background: url("assests/images/Gallery(8).jpg");
+    background: url("assets/images/Gallery(8).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(9){
-    background: url("assests/images/Gallery(9).webp");
+    background: url("assets/images/Gallery(9).webp");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(10){
-    background: url("assests/images/Gallery(10).jpg");
+    background: url("assets/images/Gallery(10).jpg");
     background-position: center;
     background-size: cover;
 }
 
 #gallery>section>section>div:nth-child(11){
-    background: url("assests/images/Gallery(11).jpg");
+    background: url("assets/images/Gallery(11).jpg");
     background-position: center;
     background-size: cover;
 }
@@ -880,7 +880,7 @@ background-position: center;
 }
 
 #contact>section>div:nth-child(2)>div{
-    background: url("assests/images/About me.jpg");
+    background: url("assets/images/About me.jpg");
     background-size: cover;
     background-position: center;
     width: 47%;
@@ -975,7 +975,7 @@ textarea {
 #loader>div{
     width: 300px;
     height: 300px;
-    background: url("assests/Gifs/Eclipse-1s-200px.gif");
+    background: url("assets/Gifs/Eclipse-1s-200px.gif");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -1294,55 +1294,55 @@ textarea {
     }
 
     #skills>section>div:nth-child(1){
-        background: url("assests/skills/CSS.svg");
+        background: url("assets/skills/CSS.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(2){
-        background: url("assests/skills/Figma-Light.svg");
+        background: url("assets/skills/Figma-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(3){
-        background: url("assests/skills/Git.svg");
+        background: url("assets/skills/Git.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(4){
-        background: url("assests/skills/Github-Light.svg");
+        background: url("assets/skills/Github-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(5){
-        background: url("assests/skills/Hibernate-Light.svg");
+        background: url("assets/skills/Hibernate-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(6){
-        background: url("assests/skills/HTML.svg");
+        background: url("assets/skills/HTML.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(7){
-        background: url("assests/skills/MySQL-Light.svg");
+        background: url("assets/skills/MySQL-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(8){
-        background: url("assests/skills/Photoshop.svg");
+        background: url("assets/skills/Photoshop.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(9){
-        background: url("assests/skills/Python-Light.svg");
+        background: url("assets/skills/Python-Light.svg");
         background-size: cover;
         background-position: center;
     }
@@ -1520,25 +1520,25 @@ textarea {
     }
 
     #projects>section>div>div:nth-child(1){
-        background: url("assests/Projects/Hotel Management System.png");
+        background: url("assets/Projects/Hotel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(2){
-        background: url("assests/Projects/Chat Application.png");
+        background: url("assets/Projects/Chat Application.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(3){
-        background: url("assests/Projects/Hostel Management System.png");
+        background: url("assets/Projects/Hostel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(4){
-        background: url("assests/Projects/Basic Chat Application.jpg");
+        background: url("assets/Projects/Basic Chat Application.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -2015,55 +2015,55 @@ textarea {
     }
 
     #skills>section>div:nth-child(1){
-        background: url("assests/skills/CSS.svg");
+        background: url("assets/skills/CSS.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(2){
-        background: url("assests/skills/Figma-Light.svg");
+        background: url("assets/skills/Figma-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(3){
-        background: url("assests/skills/Git.svg");
+        background: url("assets/skills/Git.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(4){
-        background: url("assests/skills/Github-Light.svg");
+        background: url("assets/skills/Github-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(5){
-        background: url("assests/skills/Hibernate-Light.svg");
+        background: url("assets/skills/Hibernate-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(6){
-        background: url("assests/skills/HTML.svg");
+        background: url("assets/skills/HTML.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(7){
-        background: url("assests/skills/MySQL-Light.svg");
+        background: url("assets/skills/MySQL-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(8){
-        background: url("assests/skills/Photoshop.svg");
+        background: url("assets/skills/Photoshop.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(9){
-        background: url("assests/skills/Python-Light.svg");
+        background: url("assets/skills/Python-Light.svg");
         background-size: cover;
         background-position: center;
     }
@@ -2241,25 +2241,25 @@ textarea {
     }
 
     #projects>section>div>div:nth-child(1){
-        background: url("assests/Projects/Hotel Management System.png");
+        background: url("assets/Projects/Hotel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(2){
-        background: url("assests/Projects/Chat Application.png");
+        background: url("assets/Projects/Chat Application.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(3){
-        background: url("assests/Projects/Hostel Management System.png");
+        background: url("assets/Projects/Hostel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(4){
-        background: url("assests/Projects/Basic Chat Application.jpg");
+        background: url("assets/Projects/Basic Chat Application.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -2740,55 +2740,55 @@ textarea {
     }
 
     #skills>section>div:nth-child(1){
-        background: url("assests/skills/CSS.svg");
+        background: url("assets/skills/CSS.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(2){
-        background: url("assests/skills/Figma-Light.svg");
+        background: url("assets/skills/Figma-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(3){
-        background: url("assests/skills/Git.svg");
+        background: url("assets/skills/Git.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(4){
-        background: url("assests/skills/Github-Light.svg");
+        background: url("assets/skills/Github-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(5){
-        background: url("assests/skills/Hibernate-Light.svg");
+        background: url("assets/skills/Hibernate-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(6){
-        background: url("assests/skills/HTML.svg");
+        background: url("assets/skills/HTML.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(7){
-        background: url("assests/skills/MySQL-Light.svg");
+        background: url("assets/skills/MySQL-Light.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(8){
-        background: url("assests/skills/Photoshop.svg");
+        background: url("assets/skills/Photoshop.svg");
         background-size: cover;
         background-position: center;
     }
 
     #skills>section>div:nth-child(9){
-        background: url("assests/skills/Python-Light.svg");
+        background: url("assets/skills/Python-Light.svg");
         background-size: cover;
         background-position: center;
     }
@@ -2966,25 +2966,25 @@ textarea {
     }
 
     #projects>section>div>div:nth-child(1){
-        background: url("assests/Projects/Hotel Management System.png");
+        background: url("assets/Projects/Hotel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(2){
-        background: url("assests/Projects/Chat Application.png");
+        background: url("assets/Projects/Chat Application.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(3){
-        background: url("assests/Projects/Hostel Management System.png");
+        background: url("assets/Projects/Hostel Management System.png");
         background-size: cover;
         background-position: center;
     }
 
     #projects>section>div>div:nth-child(4){
-        background: url("assests/Projects/Basic Chat Application.jpg");
+        background: url("assets/Projects/Basic Chat Application.jpg");
         background-size: cover;
         background-position: center;
     }
