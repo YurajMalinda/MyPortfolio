@@ -3,7 +3,6 @@ main{
 }
 section{
     position: relative;
-    height: 100vh;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 30px;
@@ -137,15 +136,17 @@ section>h1{
 
 @media all and (max-width: 321px){
     section{
-        height: 200vh;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+
+    section:last-child{
         padding-bottom: 20px;
     }
 
     .topic{
-        margin-bottom: 30px;
         height: 28%;
     }
 
@@ -155,7 +156,6 @@ section>h1{
     }
 
     .topic1{
-        margin-bottom: 30px;
         height: 28%;
     }
 
@@ -178,64 +178,77 @@ section>h1{
         display: none;
     }
 
-#transitionAssignments{
-    margin-left: 7px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 25px;
-}
+    #transitionAssignments{
+        margin-left: 7px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 25px;
+    }
 
-#animationAssignments{
-    margin-left: 7px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 25px;
-}
+    #animationAssignments{
+        margin-left: 7px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 25px;
+    }
 
-.assignments{
-    width: 90%;
-    border-radius: 11px;
-}
+    #bootstrapAssignments{
+        margin-left: 7px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
 
-.assignments>svg{
-    width: 55%;
-    height: 43%;
-}
+    #jsAssignments{
+        margin-left: 7px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
 
-.assignments>p{
-    font-size: 3.3vw;
-}
+    .assignments{
+        width: 89%;
+        border-radius: 11px;
+        height : 20vh;
+    }
 
-.assignments>a{
-    font-size: 3.2vw;
-    padding: 3px 20px;
-    border-radius: 5px;
-}
+    .assignments>svg{
+        width: 55%;
+        height: 43%;
+    }
 
-.assignments:hover{
-    transition: 1s all;
-    background-color: #FFF500;
-    box-shadow: 6px 6px 4px #FFF500;
-}
+    .assignments>p{
+        font-size: 3.3vw;
+    }
 
-.assignments:hover svg{
-    transition: 1s all;
-    width: 56%;
-    height: 44%;
-}
+    .assignments>a{
+        font-size: 3.2vw;
+        padding: 3px 20px;
+        border-radius: 5px;
+    }
 
-.assignments:hover p{
-    transition: 1s all;
-    font-size: 3.4vw;
-}
+    .assignments:hover{
+        transition: 1s all;
+        background-color: #FFF500;
+        box-shadow: 6px 6px 4px #FFF500;
+    }
 
-.assignments:hover a{
-    transition: 1s all;
-    background-color: black;
-    border: 1px solid #FFF500;
-    color: #FFF500;
-    box-shadow: 2px 2px 5px black;
-}
+    .assignments:hover svg{
+        transition: 1s all;
+        width: 56%;
+        height: 44%;
+    }
+
+    .assignments:hover p{
+        transition: 1s all;
+        font-size: 3.4vw;
+    }
+
+    .assignments:hover a{
+        transition: 1s all;
+        background-color: black;
+        border: 1px solid #FFF500;
+        color: #FFF500;
+        box-shadow: 2px 2px 5px black;
+    }
 }
 
 
