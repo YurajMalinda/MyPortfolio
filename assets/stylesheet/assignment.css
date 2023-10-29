@@ -5,26 +5,26 @@ section{
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
 }
 
 .topic1{
+    position: relative;
     height: 57vh;
 }
 
 section>h1{
     font-size: 2.5vw;
-    margin-bottom: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
     color: #FFF500;
     font-family: 'Roboto Slab', serif;
 }
 
 #cssAssignments{
-    position: relative;
     margin-left: 66px;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -138,8 +138,7 @@ section>h1{
     section{
         padding-left: 0;
         padding-right: 0;
-        padding-top: 15px;
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     section:last-child{
@@ -153,6 +152,7 @@ section>h1{
     .topic>h1{
         font-size: 5.5vw;
         margin-bottom: 14px;
+        margin-top: 14px;
     }
 
     .topic1{
@@ -260,6 +260,10 @@ section>h1{
         padding-left: 0;
         padding-right: 0;
         padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    section:last-child{
         padding-bottom: 20px;
     }
 
@@ -312,8 +316,9 @@ section>h1{
     }
 
     .assignments{
-        width: 90%;
+        width: 89%;
         border-radius: 11px;
+        height : 20vh;
     }
 
     .assignments>svg{
@@ -365,6 +370,10 @@ section>h1{
         padding-left: 0;
         padding-right: 0;
         padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    section:last-child{
         padding-bottom: 20px;
     }
 
@@ -417,8 +426,9 @@ section>h1{
     }
 
     .assignments{
-        width: 90%;
+        width: 89%;
         border-radius: 11px;
+        height : 20vh;
     }
 
     .assignments>svg{
@@ -504,7 +514,9 @@ section>h1{
     }
 
     .assignments{
-        width: 90%;
+        width: 89%;
+        border-radius: 11px;
+        height : 20vh;
     }
 
     .assignments>svg,p,a{
